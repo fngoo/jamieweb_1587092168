@@ -1,584 +1,0 @@
-travis_fold:start:worker_info[0K[33;1mWorker information[0m
-hostname: ff7ab02d-893c-4f08-813c-0f897856a773@1.worker-org-85d846cc5-bv9hp.gce-production-1
-version: v6.2.6 https://github.com/travis-ci/worker/tree/ba21bd30589fd152126e13df30e0cc78ccdf2837
-instance: travis-job-7183561c-a055-4609-b96f-fb455609fa03 travis-ci-sardonyx-xenial-1553530528-f909ac5 (via amqp)
-startup: 6.41939176s
-travis_fold:end:worker_info[0Ktravis_time:start:008ab36d[0Ktravis_time:end:008ab36d:start=1577666731019128625,finish=1577666731151620404,duration=132491779,event=no_world_writable_dirs[0Ktravis_time:start:0ab7ba7a[0Ktravis_time:end:0ab7ba7a:start=1577666731154831080,finish=1577666731161824750,duration=6993670,event=agent[0Ktravis_time:start:23bb7a60[0Ktravis_time:end:23bb7a60:start=1577666731164495843,finish=1577666731166544567,duration=2048724,event=check_unsupported[0Ktravis_time:start:1bcb3490[0Ktravis_fold:start:system_info[0K[33;1mBuild system information[0m
-Build language: php
-Build group: stable
-Build dist: xenial
-Build id: 630769794
-Job id: 630769795
-Runtime kernel version: 4.15.0-1028-gcp
-travis-build version: 2dca56efb
-[34m[1mBuild image provisioning date and time[0m
-Mon Mar 25 16:43:24 UTC 2019
-[34m[1mOperating System Details[0m
-Distributor ID:	Ubuntu
-Description:	Ubuntu 16.04.6 LTS
-Release:	16.04
-Codename:	xenial
-[34m[1mSystemd Version[0m
-systemd 229
-[34m[1mCookbooks Version[0m
-42e42e4 https://github.com/travis-ci/travis-cookbooks/tree/42e42e4
-[34m[1mgit version[0m
-git version 2.21.0
-[34m[1mbash version[0m
-GNU bash, version 4.3.48(1)-release (x86_64-pc-linux-gnu)
-[34m[1mgcc version[0m
-gcc (Ubuntu 5.4.0-6ubuntu1~16.04.11) 5.4.0 20160609
-[34m[1mdocker version[0m
-Client:
- Version:           18.06.0-ce
- API version:       1.38
- Go version:        go1.10.3
- Git commit:        0ffa825
- Built:             Wed Jul 18 19:11:02 2018
- OS/Arch:           linux/amd64
- Experimental:      false
-
-Server:
- Engine:
-  Version:          18.06.0-ce
-  API version:      1.38 (minimum version 1.12)
-  Go version:       go1.10.3
-  Git commit:       0ffa825
-  Built:            Wed Jul 18 19:09:05 2018
-  OS/Arch:          linux/amd64
-  Experimental:     false
-[34m[1mclang version[0m
-clang version 7.0.0 (tags/RELEASE_700/final)
-[34m[1mjq version[0m
-jq-1.5
-[34m[1mbats version[0m
-Bats 0.4.0
-[34m[1mshellcheck version[0m
-0.6.0
-[34m[1mshfmt version[0m
-v2.6.3
-[34m[1mccache version[0m
-3.2.4
-[34m[1mcmake version[0m
-cmake version 3.12.4
-[34m[1mheroku version[0m
-heroku/7.22.7 linux-x64 node-v11.10.1
-[34m[1mimagemagick version[0m
-Version: ImageMagick 6.8.9-9 Q16 x86_64 2018-09-28 http://www.imagemagick.org
-[34m[1mmd5deep version[0m
-4.4
-[34m[1mmercurial version[0m
-version 4.8
-[34m[1mmysql version[0m
-mysql  Ver 14.14 Distrib 5.7.25, for Linux (x86_64) using  EditLine wrapper
-[34m[1mopenssl version[0m
-OpenSSL 1.0.2g  1 Mar 2016
-[34m[1mpacker version[0m
-1.3.3
-[34m[1mpostgresql client version[0m
-psql (PostgreSQL) 10.7 (Ubuntu 10.7-1.pgdg16.04+1)
-[34m[1mragel version[0m
-Ragel State Machine Compiler version 6.8 Feb 2013
-[34m[1msudo version[0m
-1.8.16
-[34m[1mgzip version[0m
-gzip 1.6
-[34m[1mzip version[0m
-Zip 3.0
-[34m[1mvim version[0m
-VIM - Vi IMproved 7.4 (2013 Aug 10, compiled Nov 24 2016 16:44:48)
-[34m[1miptables version[0m
-iptables v1.6.0
-[34m[1mcurl version[0m
-curl 7.47.0 (x86_64-pc-linux-gnu) libcurl/7.47.0 GnuTLS/3.4.10 zlib/1.2.8 libidn/1.32 librtmp/2.3
-[34m[1mwget version[0m
-GNU Wget 1.17.1 built on linux-gnu.
-[34m[1mrsync version[0m
-rsync  version 3.1.1  protocol version 31
-[34m[1mgimme version[0m
-v1.5.3
-[34m[1mnvm version[0m
-0.34.0
-[34m[1mperlbrew version[0m
-/home/travis/perl5/perlbrew/bin/perlbrew  - App::perlbrew/0.86
-[34m[1mphpenv version[0m
-rbenv 1.1.2
-[34m[1mrvm version[0m
-rvm 1.29.7 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
-[34m[1mdefault ruby version[0m
-ruby 2.5.3p105 (2018-10-18 revision 65156) [x86_64-linux]
-[34m[1mCouchDB version[0m
-couchdb 1.6.1
-[34m[1mElasticSearch version[0m
-5.5.0
-[34m[1mInstalled Firefox version[0m
-firefox 63.0.1
-[34m[1mMongoDB version[0m
-MongoDB 4.0.7
-[34m[1mPhantomJS version[0m
-2.1.1
-[34m[1mPre-installed PostgreSQL versions[0m
-9.4.21
-9.5.16
-9.6.12
-[34m[1mRedis version[0m
-redis-server 5.0.4
-[34m[1mPre-installed Go versions[0m
-1.11.1
-[34m[1mmvn version[0m
-Apache Maven 3.6.0 (97c98ec64a1fdfee7767ce5ffb20918da4f719f3; 2018-10-24T18:41:47Z)
-[34m[1mgradle version[0m
-Gradle 4.10.2!
-[34m[1mlein version[0m
-Leiningen 2.9.1 on Java 11.0.2 OpenJDK 64-Bit Server VM
-[34m[1mPre-installed Node.js versions[0m
-v10.15.3
-v11.0.0
-v4.9.1
-v6.17.0
-v8.12.0
-v8.15.1
-v8.9
-[34m[1mphpenv versions[0m
-  system
-  5.6
-  5.6.40
-  7.1
-  7.1.27
-  7.2
-* 7.2.15 (set by /home/travis/.phpenv/version)
-  hhvm
-  hhvm-stable
-[34m[1mcomposer --version[0m
-Composer version 1.8.4 2019-02-11 10:52:10
-[34m[1mPre-installed Ruby versions[0m
-ruby-2.3.8
-ruby-2.4.5
-ruby-2.5.3
-travis_fold:end:system_info[0K
-travis_time:end:1bcb3490:start=1577666731169135495,finish=1577666731175296769,duration=6161274,event=show_system_info[0Ktravis_time:start:01e6085b[0Ktravis_time:end:01e6085b:start=1577666731179005407,finish=1577666731194127238,duration=15121831,event=rm_riak_source[0Ktravis_time:start:1e5358b3[0Ktravis_time:end:1e5358b3:start=1577666731203824155,finish=1577666731209272143,duration=5447988,event=fix_rwky_redis[0Ktravis_time:start:313c9282[0Ktravis_time:end:313c9282:start=1577666731212535536,finish=1577666731557002021,duration=344466485,event=wait_for_network[0Ktravis_time:start:012081a8[0Ktravis_time:end:012081a8:start=1577666731559920748,finish=1577666731733875626,duration=173954878,event=update_apt_keys[0Ktravis_time:start:09febc22[0Ktravis_time:end:09febc22:start=1577666731737135579,finish=1577666731785347948,duration=48212369,event=fix_hhvm_source[0Ktravis_time:start:02d72268[0Ktravis_time:end:02d72268:start=1577666731788291245,finish=1577666731790800414,duration=2509169,event=update_mongo_arch[0Ktravis_time:start:008331c0[0Ktravis_time:end:008331c0:start=1577666731793532568,finish=1577666731832735720,duration=39203152,event=fix_sudo_enabled_trusty[0Ktravis_time:start:0cb36382[0Ktravis_time:end:0cb36382:start=1577666731835824501,finish=1577666731837961310,duration=2136809,event=update_glibc[0Ktravis_time:start:2fabe328[0Ktravis_time:end:2fabe328:start=1577666731840731911,finish=1577666731847862965,duration=7131054,event=clean_up_path[0Ktravis_time:start:03a54008[0Ktravis_time:end:03a54008:start=1577666731850474140,finish=1577666731857414154,duration=6940014,event=fix_resolv_conf[0Ktravis_time:start:2c2e8e8a[0Ktravis_time:end:2c2e8e8a:start=1577666731860014831,finish=1577666731867562643,duration=7547812,event=fix_etc_hosts[0Ktravis_time:start:065c6e50[0Ktravis_time:end:065c6e50:start=1577666731870224086,finish=1577666731877401488,duration=7177402,event=fix_mvn_settings_xml[0Ktravis_time:start:0104daf0[0Ktravis_time:end:0104daf0:start=1577666731879939910,finish=1577666731887627647,duration=7687737,event=no_ipv6_localhost[0Ktravis_time:start:04c50dd1[0Ktravis_time:end:04c50dd1:start=1577666731890182259,finish=1577666731892094106,duration=1911847,event=fix_etc_mavenrc[0Ktravis_time:start:04294c4a[0Ktravis_time:end:04294c4a:start=1577666731894564935,finish=1577666731897067247,duration=2502312,event=fix_wwdr_certificate[0Ktravis_time:start:2e2b3904[0Ktravis_time:end:2e2b3904:start=1577666731899515146,finish=1577666731919517063,duration=20001917,event=put_localhost_first[0Ktravis_time:start:28dd8793[0Ktravis_time:end:28dd8793:start=1577666731922036383,finish=1577666731924432262,duration=2395879,event=home_paths[0Ktravis_time:start:06283ff8[0Ktravis_time:end:06283ff8:start=1577666731926908841,finish=1577666731936716727,duration=9807886,event=disable_initramfs[0Ktravis_time:start:01b0a62f[0Ktravis_time:end:01b0a62f:start=1577666731939163266,finish=1577666732206391164,duration=267227898,event=disable_ssh_roaming[0Ktravis_time:start:16fb4557[0Ktravis_time:end:16fb4557:start=1577666732209549967,finish=1577666732211673231,duration=2123264,event=debug_tools[0Ktravis_time:start:0a7bbe2c[0Ktravis_time:end:0a7bbe2c:start=1577666732214471806,finish=1577666732217279415,duration=2807609,event=uninstall_oclint[0Ktravis_time:start:29676d77[0Ktravis_time:end:29676d77:start=1577666732219993823,finish=1577666732222564236,duration=2570413,event=rvm_use[0Ktravis_time:start:08dc37e0[0Ktravis_time:end:08dc37e0:start=1577666732225158718,finish=1577666732232059498,duration=6900780,event=rm_etc_boto_cfg[0Ktravis_time:start:0803152c[0Ktravis_time:end:0803152c:start=1577666732234566965,finish=1577666732236863201,duration=2296236,event=rm_oraclejdk8_symlink[0Ktravis_time:start:07622c60[0Ktravis_time:end:07622c60:start=1577666732239376835,finish=1577666732322807691,duration=83430856,event=enable_i386[0Ktravis_time:start:0b4b9d7d[0Ktravis_time:end:0b4b9d7d:start=1577666732325818858,finish=1577666732331155744,duration=5336886,event=update_rubygems[0Ktravis_time:start:0e94aab7[0Ktravis_time:end:0e94aab7:start=1577666732333832712,finish=1577666733074724134,duration=740891422,event=ensure_path_components[0Ktravis_time:start:1d5e32c0[0Ktravis_time:end:1d5e32c0:start=1577666733077945858,finish=1577666733080219476,duration=2273618,event=redefine_curl[0Ktravis_time:start:1e03d2d8[0Ktravis_time:end:1e03d2d8:start=1577666733083084360,finish=1577666733085277631,duration=2193271,event=nonblock_pipe[0Ktravis_time:start:0c96f6cc[0Ktravis_time:end:0c96f6cc:start=1577666733088142865,finish=1577666739118947091,duration=6030804226,event=apt_get_update[0Ktravis_time:start:024c56d8[0Ktravis_time:end:024c56d8:start=1577666739122625967,finish=1577666739124947880,duration=2321913,event=deprecate_xcode_64[0Ktravis_time:start:024f712e[0Ktravis_time:end:024f712e:start=1577666739127732731,finish=1577666741352876308,duration=2225143577,event=update_heroku[0Ktravis_time:start:0ddf412c[0Ktravis_time:end:0ddf412c:start=1577666741356050896,finish=1577666741358143819,duration=2092923,event=shell_session_update[0Ktravis_time:start:050bed3e[0Ktravis_fold:start:docker_mtu[0Ktravis_fold:end:docker_mtu[0Ktravis_time:end:050bed3e:start=1577666741360827482,finish=1577666743454668862,duration=2093841380,event=set_docker_mtu[0Ktravis_time:start:0413203e[0Ktravis_fold:start:resolvconf[0Ktravis_fold:end:resolvconf[0Ktravis_time:end:0413203e:start=1577666743458305878,finish=1577666743511557580,duration=53251702,event=resolvconf[0Ktravis_time:start:068c6b80[0Ktravis_time:end:068c6b80:start=1577666743515744830,finish=1577666743635528492,duration=119783662,event=maven_central_mirror[0Ktravis_time:start:1de86378[0Ktravis_time:end:1de86378:start=1577666743638668944,finish=1577666743640630863,duration=1961919,event=fix_ps4[0Ktravis_time:start:0ee59a20[0K
-travis_fold:start:git.checkout[0Ktravis_time:start:2401520d[0K$ git clone --depth=50 --branch=master https://github.com/jamieweb/jamieweb.git jamieweb/jamieweb
-Cloning into 'jamieweb/jamieweb'...
-remote: Enumerating objects: 981, done.[K
-remote: Counting objects:   0% (1/981)[Kremote: Counting objects:   1% (10/981)[Kremote: Counting objects:   2% (20/981)[Kremote: Counting objects:   3% (30/981)[Kremote: Counting objects:   4% (40/981)[Kremote: Counting objects:   5% (50/981)[Kremote: Counting objects:   6% (59/981)[Kremote: Counting objects:   7% (69/981)[Kremote: Counting objects:   8% (79/981)[Kremote: Counting objects:   9% (89/981)[Kremote: Counting objects:  10% (99/981)[Kremote: Counting objects:  11% (108/981)[Kremote: Counting objects:  12% (118/981)[Kremote: Counting objects:  13% (128/981)[Kremote: Counting objects:  14% (138/981)[Kremote: Counting objects:  15% (148/981)[Kremote: Counting objects:  16% (157/981)[Kremote: Counting objects:  17% (167/981)[Kremote: Counting objects:  18% (177/981)[Kremote: Counting objects:  19% (187/981)[Kremote: Counting objects:  20% (197/981)[Kremote: Counting objects:  21% (207/981)[Kremote: Counting objects:  22% (216/981)[Kremote: Counting objects:  23% (226/981)[Kremote: Counting objects:  24% (236/981)[Kremote: Counting objects:  25% (246/981)[Kremote: Counting objects:  26% (256/981)[Kremote: Counting objects:  27% (265/981)[Kremote: Counting objects:  28% (275/981)[Kremote: Counting objects:  29% (285/981)[Kremote: Counting objects:  30% (295/981)[Kremote: Counting objects:  31% (305/981)[Kremote: Counting objects:  32% (314/981)[Kremote: Counting objects:  33% (324/981)[Kremote: Counting objects:  34% (334/981)[Kremote: Counting objects:  35% (344/981)[Kremote: Counting objects:  36% (354/981)[Kremote: Counting objects:  37% (363/981)[Kremote: Counting objects:  38% (373/981)[Kremote: Counting objects:  39% (383/981)[Kremote: Counting objects:  40% (393/981)[Kremote: Counting objects:  41% (403/981)[Kremote: Counting objects:  42% (413/981)[Kremote: Counting objects:  43% (422/981)[Kremote: Counting objects:  44% (432/981)[Kremote: Counting objects:  45% (442/981)[Kremote: Counting objects:  46% (452/981)[Kremote: Counting objects:  47% (462/981)[Kremote: Counting objects:  48% (471/981)[Kremote: Counting objects:  49% (481/981)[Kremote: Counting objects:  50% (491/981)[Kremote: Counting objects:  51% (501/981)[Kremote: Counting objects:  52% (511/981)[Kremote: Counting objects:  53% (520/981)[Kremote: Counting objects:  54% (530/981)[Kremote: Counting objects:  55% (540/981)[Kremote: Counting objects:  56% (550/981)[Kremote: Counting objects:  57% (560/981)[Kremote: Counting objects:  58% (569/981)[Kremote: Counting objects:  59% (579/981)[Kremote: Counting objects:  60% (589/981)[Kremote: Counting objects:  61% (599/981)[Kremote: Counting objects:  62% (609/981)[Kremote: Counting objects:  63% (619/981)[Kremote: Counting objects:  64% (628/981)[Kremote: Counting objects:  65% (638/981)[Kremote: Counting objects:  66% (648/981)[Kremote: Counting objects:  67% (658/981)[Kremote: Counting objects:  68% (668/981)[Kremote: Counting objects:  69% (677/981)[Kremote: Counting objects:  70% (687/981)[Kremote: Counting objects:  71% (697/981)[Kremote: Counting objects:  72% (707/981)[Kremote: Counting objects:  73% (717/981)[Kremote: Counting objects:  74% (726/981)[Kremote: Counting objects:  75% (736/981)[Kremote: Counting objects:  76% (746/981)[Kremote: Counting objects:  77% (756/981)[Kremote: Counting objects:  78% (766/981)[Kremote: Counting objects:  79% (775/981)[Kremote: Counting objects:  80% (785/981)[Kremote: Counting objects:  81% (795/981)[Kremote: Counting objects:  82% (805/981)[Kremote: Counting objects:  83% (815/981)[Kremote: Counting objects:  84% (825/981)[Kremote: Counting objects:  85% (834/981)[Kremote: Counting objects:  86% (844/981)[Kremote: Counting objects:  87% (854/981)[Kremote: Counting objects:  88% (864/981)[Kremote: Counting objects:  89% (874/981)[Kremote: Counting objects:  90% (883/981)[Kremote: Counting objects:  91% (893/981)[Kremote: Counting objects:  92% (903/981)[Kremote: Counting objects:  93% (913/981)[Kremote: Counting objects:  94% (923/981)[Kremote: Counting objects:  95% (932/981)[Kremote: Counting objects:  96% (942/981)[Kremote: Counting objects:  97% (952/981)[Kremote: Counting objects:  98% (962/981)[Kremote: Counting objects:  99% (972/981)[Kremote: Counting objects: 100% (981/981)[Kremote: Counting objects: 100% (981/981), done.[K
-remote: Compressing objects:   0% (1/578)[Kremote: Compressing objects:   1% (6/578)[Kremote: Compressing objects:   2% (12/578)[Kremote: Compressing objects:   3% (18/578)[Kremote: Compressing objects:   4% (24/578)[Kremote: Compressing objects:   5% (29/578)[Kremote: Compressing objects:   6% (35/578)[Kremote: Compressing objects:   7% (41/578)[Kremote: Compressing objects:   8% (47/578)[Kremote: Compressing objects:   9% (53/578)[Kremote: Compressing objects:  10% (58/578)[Kremote: Compressing objects:  11% (64/578)[Kremote: Compressing objects:  12% (70/578)[Kremote: Compressing objects:  13% (76/578)[Kremote: Compressing objects:  14% (81/578)[Kremote: Compressing objects:  15% (87/578)[Kremote: Compressing objects:  16% (93/578)[Kremote: Compressing objects:  17% (99/578)[Kremote: Compressing objects:  18% (105/578)[Kremote: Compressing objects:  19% (110/578)[Kremote: Compressing objects:  20% (116/578)[Kremote: Compressing objects:  21% (122/578)[Kremote: Compressing objects:  22% (128/578)[Kremote: Compressing objects:  23% (133/578)[Kremote: Compressing objects:  24% (139/578)[Kremote: Compressing objects:  25% (145/578)[Kremote: Compressing objects:  26% (151/578)[Kremote: Compressing objects:  27% (157/578)[Kremote: Compressing objects:  28% (162/578)[Kremote: Compressing objects:  29% (168/578)[Kremote: Compressing objects:  30% (174/578)[Kremote: Compressing objects:  31% (180/578)[Kremote: Compressing objects:  32% (185/578)[Kremote: Compressing objects:  33% (191/578)[Kremote: Compressing objects:  34% (197/578)[Kremote: Compressing objects:  35% (203/578)[Kremote: Compressing objects:  36% (209/578)[Kremote: Compressing objects:  37% (214/578)[Kremote: Compressing objects:  38% (220/578)[Kremote: Compressing objects:  39% (226/578)[Kremote: Compressing objects:  40% (232/578)[Kremote: Compressing objects:  41% (237/578)[Kremote: Compressing objects:  42% (243/578)[Kremote: Compressing objects:  43% (249/578)[Kremote: Compressing objects:  44% (255/578)[Kremote: Compressing objects:  45% (261/578)[Kremote: Compressing objects:  46% (266/578)[Kremote: Compressing objects:  47% (272/578)[Kremote: Compressing objects:  48% (278/578)[Kremote: Compressing objects:  49% (284/578)[Kremote: Compressing objects:  50% (289/578)[Kremote: Compressing objects:  51% (295/578)[Kremote: Compressing objects:  52% (301/578)[Kremote: Compressing objects:  53% (307/578)[Kremote: Compressing objects:  54% (313/578)[Kremote: Compressing objects:  55% (318/578)[Kremote: Compressing objects:  56% (324/578)[Kremote: Compressing objects:  57% (330/578)[Kremote: Compressing objects:  58% (336/578)[Kremote: Compressing objects:  59% (342/578)[Kremote: Compressing objects:  60% (347/578)[Kremote: Compressing objects:  61% (353/578)[Kremote: Compressing objects:  62% (359/578)[Kremote: Compressing objects:  63% (365/578)[Kremote: Compressing objects:  64% (370/578)[Kremote: Compressing objects:  65% (376/578)[Kremote: Compressing objects:  66% (382/578)[Kremote: Compressing objects:  67% (388/578)[Kremote: Compressing objects:  68% (394/578)[Kremote: Compressing objects:  69% (399/578)[Kremote: Compressing objects:  70% (405/578)[Kremote: Compressing objects:  71% (411/578)[Kremote: Compressing objects:  72% (417/578)[Kremote: Compressing objects:  73% (422/578)[Kremote: Compressing objects:  74% (428/578)[Kremote: Compressing objects:  75% (434/578)[Kremote: Compressing objects:  76% (440/578)[Kremote: Compressing objects:  77% (446/578)[Kremote: Compressing objects:  78% (451/578)[Kremote: Compressing objects:  79% (457/578)[Kremote: Compressing objects:  80% (463/578)[Kremote: Compressing objects:  81% (469/578)[Kremote: Compressing objects:  82% (474/578)[Kremote: Compressing objects:  83% (480/578)[Kremote: Compressing objects:  84% (486/578)[Kremote: Compressing objects:  85% (492/578)[Kremote: Compressing objects:  86% (498/578)[Kremote: Compressing objects:  87% (503/578)[Kremote: Compressing objects:  88% (509/578)[Kremote: Compressing objects:  89% (515/578)[Kremote: Compressing objects:  90% (521/578)[Kremote: Compressing objects:  91% (526/578)[Kremote: Compressing objects:  92% (532/578)[Kremote: Compressing objects:  93% (538/578)[Kremote: Compressing objects:  94% (544/578)[Kremote: Compressing objects:  95% (550/578)[Kremote: Compressing objects:  96% (555/578)[Kremote: Compressing objects:  97% (561/578)[Kremote: Compressing objects:  98% (567/578)[Kremote: Compressing objects:  99% (573/578)[Kremote: Compressing objects: 100% (578/578)[Kremote: Compressing objects: 100% (578/578), done.[K
-Receiving objects:   0% (1/981)   Receiving objects:   1% (10/981)   Receiving objects:   2% (20/981)   Receiving objects:   3% (30/981)   Receiving objects:   4% (40/981)   Receiving objects:   5% (50/981)   Receiving objects:   6% (59/981)   Receiving objects:   7% (69/981)   Receiving objects:   8% (79/981)   Receiving objects:   9% (89/981)   Receiving objects:  10% (99/981)   Receiving objects:  11% (108/981)   Receiving objects:  12% (118/981)   Receiving objects:  13% (128/981)   Receiving objects:  14% (138/981)   Receiving objects:  15% (148/981)   Receiving objects:  16% (157/981)   Receiving objects:  17% (167/981)   Receiving objects:  18% (177/981)   Receiving objects:  19% (187/981)   Receiving objects:  20% (197/981)   Receiving objects:  21% (207/981)   Receiving objects:  22% (216/981)   Receiving objects:  23% (226/981)   Receiving objects:  24% (236/981)   Receiving objects:  25% (246/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  26% (256/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  27% (265/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  28% (275/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  29% (285/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  30% (295/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  31% (305/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  32% (314/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  33% (324/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  34% (334/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  35% (344/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  36% (354/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  37% (363/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  38% (373/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  39% (383/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  40% (393/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  41% (403/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  42% (413/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  43% (422/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  44% (432/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  45% (442/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  46% (452/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  47% (462/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  48% (471/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  49% (481/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  50% (491/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  51% (501/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  52% (511/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  53% (520/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  54% (530/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  55% (540/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  56% (550/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  57% (560/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  58% (569/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  59% (579/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  60% (589/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  61% (599/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  62% (609/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  63% (619/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  64% (628/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  65% (638/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  66% (648/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  67% (658/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  68% (668/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  69% (677/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  70% (687/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  71% (697/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  72% (707/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  73% (717/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  74% (726/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  75% (736/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  76% (746/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  77% (756/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  78% (766/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  79% (775/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  80% (785/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  81% (795/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  82% (805/981), 9.65 MiB | 19.32 MiB/s   remote: Total 981 (delta 369), reused 899 (delta 321), pack-reused 0[K
-Receiving objects:  83% (815/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  84% (825/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  85% (834/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  86% (844/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  87% (854/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  88% (864/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  89% (874/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  90% (883/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  91% (893/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  92% (903/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  93% (913/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  94% (923/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  95% (932/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  96% (942/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  97% (952/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  98% (962/981), 9.65 MiB | 19.32 MiB/s   Receiving objects:  99% (972/981), 9.65 MiB | 19.32 MiB/s   Receiving objects: 100% (981/981), 9.65 MiB | 19.32 MiB/s   Receiving objects: 100% (981/981), 24.93 MiB | 29.64 MiB/s, done.
-Resolving deltas:   0% (0/369)   Resolving deltas:   1% (7/369)   Resolving deltas:   2% (11/369)   Resolving deltas:  20% (76/369)   Resolving deltas:  22% (82/369)   Resolving deltas:  32% (120/369)   Resolving deltas:  34% (127/369)   Resolving deltas:  35% (131/369)   Resolving deltas:  36% (134/369)   Resolving deltas:  37% (137/369)   Resolving deltas:  38% (141/369)   Resolving deltas:  40% (150/369)   Resolving deltas:  43% (160/369)   Resolving deltas:  44% (165/369)   Resolving deltas:  46% (170/369)   Resolving deltas:  47% (174/369)   Resolving deltas:  48% (178/369)   Resolving deltas:  50% (185/369)   Resolving deltas:  51% (190/369)   Resolving deltas:  52% (192/369)   Resolving deltas:  53% (196/369)   Resolving deltas:  54% (200/369)   Resolving deltas:  55% (203/369)   Resolving deltas:  66% (246/369)   Resolving deltas:  67% (249/369)   Resolving deltas:  70% (260/369)   Resolving deltas:  72% (268/369)   Resolving deltas:  73% (270/369)   Resolving deltas:  74% (274/369)   Resolving deltas:  75% (280/369)   Resolving deltas:  76% (281/369)   Resolving deltas:  77% (285/369)   Resolving deltas:  80% (298/369)   Resolving deltas:  81% (299/369)   Resolving deltas:  84% (310/369)   Resolving deltas:  85% (315/369)   Resolving deltas:  86% (320/369)   Resolving deltas:  91% (336/369)   Resolving deltas:  92% (340/369)   Resolving deltas:  97% (358/369)   Resolving deltas: 100% (369/369)   Resolving deltas: 100% (369/369), done.
-travis_time:end:2401520d:start=1577666743646250473,finish=1577666745741874240,duration=2095623767,event=checkout[0K$ cd jamieweb/jamieweb
-$ git checkout -qf 323c747c1b6bb1f197a72b377b9cfd12a83ec51f
-travis_fold:end:git.checkout[0K
-travis_time:end:2401520d:start=1577666743646250473,finish=1577666745933587790,duration=2287337317,event=checkout[0Ktravis_time:start:395c72c0[0Ktravis_time:end:395c72c0:start=1577666745936846672,finish=1577666745942521186,duration=5674514,event=env[0Ktravis_time:start:0beb6cd0[0K$ phpenv global 7.2 2>/dev/null
-travis_time:end:0beb6cd0:start=1577666745945765635,finish=1577666745961617670,duration=15852035,event=setup[0Ktravis_fold:start:pearrc[0K[33;1mWriting /home/travis/.pearrc[0m
-travis_time:start:153f04dd[0Ktravis_time:end:153f04dd:start=1577666745965076574,finish=1577666746150803604,duration=185727030,event=setup[0Ktravis_time:start:00e4f0f4[0K$ pear config-show
-[1mConfiguration (channel pear.php.net):[m
-=====================================
-Auto-discover new Channels     auto_discover    1
-Default Channel                default_channel  pear.php.net
-HTTP Proxy Server Address      http_proxy       <not set>
-PEAR server [DEPRECATED]       master_server    pear.php.net
-Default Channel Mirror         preferred_mirror pear.php.net
-Remote Configuration File      remote_config    <not set>
-PEAR executables directory     bin_dir          /home/travis/.phpenv/versions/7.2/bin
-PEAR documentation directory   doc_dir          /home/travis/.phpenv/versions/7.2/docs
-PHP extension directory        ext_dir          /home/travis/.phpenv/versions/7.2.15/lib/php/extensions/no-debug-zts-20170718
-PEAR directory                 php_dir          /home/travis/.phpenv/versions/7.2/share/pear
-PEAR Installer cache directory cache_dir        /tmp/pear/cache
-PEAR configuration file        cfg_dir          /home/travis/.phpenv/versions/7.2/cfg
-directory
-PEAR data directory            data_dir         /home/travis/.phpenv/versions/7.2/data
-PEAR Installer download        download_dir     /tmp/pear/install
-directory
-Systems manpage files          man_dir          /home/travis/.phpenv/versions/7.2/man
-directory
-PEAR metadata directory        metadata_dir     <not set>
-PHP CLI/CGI binary             php_bin          /home/travis/.phpenv/versions/7.2.15/bin/php
-php.ini location               php_ini          /home/travis/.phpenv/versions/7.2.15/etc/php.ini
---program-prefix passed to     php_prefix       <not set>
-PHP's ./configure
---program-suffix passed to     php_suffix       <not set>
-PHP's ./configure
-PEAR Installer temp directory  temp_dir         /tmp/pear/install
-PEAR test directory            test_dir         /home/travis/.phpenv/versions/7.2/tests
-PEAR www files directory       www_dir          /home/travis/.phpenv/versions/7.2/www
-Cache TimeToLive               cache_ttl        3600
-Preferred Package State        preferred_state  stable
-Unix file mask                 umask            2
-Debug Log Level                verbose          1
-PEAR password (for             password         <not set>
-maintainers)
-Signature Handling Program     sig_bin          /usr/bin/gpg
-Signature Key Directory        sig_keydir       /home/travis/.phpenv/versions/7.2.15/etc/pearkeys
-Signature Key Id               sig_keyid        <not set>
-Package Signature Type         sig_type         gpg
-PEAR username (for             username         <not set>
-maintainers)
-User Configuration File        Filename         /home/travis/.pearrc
-System Configuration File      Filename         /home/travis/.phpenv/versions/7.2.15/etc/pear.conf
-travis_time:end:00e4f0f4:start=1577666746154410502,finish=1577666746280148054,duration=125737552,event=setup[0Ktravis_fold:end:pearrc[0Ktravis_time:start:06a492e0[0K$ phpenv global 7.2
-travis_time:end:06a492e0:start=1577666746283631462,finish=1577666746296487404,duration=12855942,event=setup[0Ktravis_time:start:030628fb[0K$ composer self-update
-Updating to version [32m1.9.1[39m (stable channel).
-   Downloading ([33mconnecting...[39m)Downloading ([33m100%[39m)         
-Use [32mcomposer self-update --rollback[39m to return to version [33m1.8.4[39m
-travis_time:end:030628fb:start=1577666746456326590,finish=1577666747139727417,duration=683400827,event=setup[0K$ php --version
-PHP 7.2.15 (cli) (built: Feb 11 2019 23:22:17) ( ZTS )
-Copyright (c) 1997-2018 The PHP Group
-Zend Engine v3.2.0, Copyright (c) 1998-2018 Zend Technologies
-    with Zend OPcache v7.2.15, Copyright (c) 1999-2018, by Zend Technologies
-    with Xdebug v2.6.1, Copyright (c) 2002-2018, by Derick Rethans
-$ composer --version
-[32mComposer[39m version [33m1.9.1[39m 2019-11-01 17:20:17
-[0m
-travis_fold:start:before_install.1[0Ktravis_time:start:06e916f8[0K$ sudo apt update
-[33m0% [Working][0m            Get:1 http://security.ubuntu.com/ubuntu xenial-security InRelease [109 kB]
-[33m0% [Connecting to archive.ubuntu.com (91.189.88.149)] [1 InRelease 12.6 kB/109 [0m                                                                               Get:2 http://apt.postgresql.org/pub/repos/apt xenial-pgdg InRelease [56.4 kB]
-[33m0% [Waiting for headers] [1 InRelease 12.6 kB/109 kB 12%] [2 InRelease 13.8 kB/[0m                                                                               Get:3 http://archive.ubuntu.com/ubuntu xenial InRelease [247 kB]
-[33m0% [3 InRelease 12.6 kB/247 kB 5%] [1 InRelease 29.3 kB/109 kB 27%] [2 InReleas[0m[33m                                                                               0% [3 InRelease 51.2 kB/247 kB 21%] [2 InRelease 42.0 kB/56.4 kB 74%][0m[33m0% [1 InRelease gpgv 109 kB] [3 InRelease 51.2 kB/247 kB 21%] [2 InRelease 42.0[0m[33m                                                                               0% [1 InRelease gpgv 109 kB] [3 InRelease 57.7 kB/247 kB 23%][0m[33m                                                             0% [3 InRelease 92.4 kB/247 kB 37%][0m[33m0% [2 InRelease gpgv 56.4 kB] [3 InRelease 95.0 kB/247 kB 38%] [Waiting for hea[0m[33m                                                                               0% [3 InRelease 141 kB/247 kB 57%] [Waiting for headers][0m                                                        Get:4 http://security.ubuntu.com/ubuntu xenial-security/main Sources [198 kB]
-[33m0% [3 InRelease 198 kB/247 kB 80%] [4 Sources 4,943 B/198 kB 2%] [Waiting for h[0m[33m                                                                               0% [4 Sources 95.1 kB/198 kB 48%] [Waiting for headers][0m[33m0% [3 InRelease gpgv 247 kB] [Waiting for headers] [4 Sources 97.7 kB/198 kB 49[0m                                                                               Get:5 http://apt.postgresql.org/pub/repos/apt xenial-pgdg/main amd64 Packages [230 kB]
-[33m0% [3 InRelease gpgv 247 kB] [Waiting for headers] [4 Sources 123 kB/198 kB 62%[0m[33m0% [Waiting for headers] [4 Sources 139 kB/198 kB 70%] [5 Packages 71.6 kB/230 [0m[33m                                                                               0% [Waiting for headers] [5 Packages 71.6 kB/230 kB 31%][0m                                                        Get:6 http://archive.ubuntu.com/ubuntu xenial-updates InRelease [109 kB]
-[33m0% [6 InRelease 22.9 kB/109 kB 21%] [5 Packages 71.6 kB/230 kB 31%][0m[33m0% [4 Sources store 0 B] [6 InRelease 38.3 kB/109 kB 35%] [Waiting for headers][0m[33m0% [6 InRelease 83.4 kB/109 kB 76%] [Waiting for headers] [5 Packages 71.6 kB/2[0m[33m                                                                               0% [Waiting for headers] [5 Packages 71.6 kB/230 kB 31%][0m[33m0% [6 InRelease gpgv 109 kB] [Waiting for headers] [Waiting for headers] [5 Pac[0m[33m                                                                               0% [Waiting for headers] [Waiting for headers] [5 Packages 71.6 kB/230 kB 31%][0m                                                                              Get:7 http://security.ubuntu.com/ubuntu xenial-security/universe Sources [141 kB]
-[33m0% [Waiting for headers] [7 Sources 3,655 B/141 kB 3%] [5 Packages 215 kB/230 k[0m                                                                               Get:8 http://archive.ubuntu.com/ubuntu xenial-backports InRelease [107 kB]
-[33m0% [8 InRelease 3,571 B/107 kB 3%] [7 Sources 79.6 kB/141 kB 56%] [5 Packages 2[0m[33m                                                                               0% [8 InRelease 57.7 kB/107 kB 54%] [5 Packages 215 kB/230 kB 93%][0m[33m0% [7 Sources store 0 B] [8 InRelease 87.3 kB/107 kB 82%] [Waiting for headers][0m[33m0% [8 InRelease 98.9 kB/107 kB 93%] [Waiting for headers] [5 Packages 215 kB/23[0m[33m                                                                               0% [Waiting for headers] [5 Packages 215 kB/230 kB 93%][0m[33m0% [8 InRelease gpgv 107 kB] [Waiting for headers] [Waiting for headers] [5 Pac[0m[33m                                                                               13% [Waiting for headers] [Waiting for headers] [5 Packages 215 kB/230 kB 93%][0m[33m                                                                              13% [Waiting for headers] [Waiting for headers][0m[33m13% [5 Packages store 0 B] [Waiting for headers] [Waiting for headers] [Waiting[0m                                                                               Get:9 http://security.ubuntu.com/ubuntu xenial-security/multiverse Sources [3,521 B]
-[33m13% [5 Packages store 0 B] [Waiting for headers] [Waiting for headers] [Waiting[0m[33m                                                                               14% [Waiting for headers] [Waiting for headers] [Waiting for headers][0m[33m14% [9 Sources store 0 B] [Waiting for headers] [Waiting for headers] [Waiting [0m[33m                                                                               14% [Waiting for headers] [Waiting for headers] [Waiting for headers][0m                                                                     Get:10 http://archive.ubuntu.com/ubuntu xenial/main Sources [1,103 kB]
-[33m14% [10 Sources 3,653 B/1,103 kB 0%] [Waiting for headers] [Waiting for headers[0m                                                                               Get:11 http://security.ubuntu.com/ubuntu xenial-security/main amd64 Packages [1,019 kB]
-[33m14% [10 Sources 341 kB/1,103 kB 31%] [11 Packages 15.2 kB/1,019 kB 1%] [Waiting[0m                                                                               Get:12 http://apt.postgresql.org/pub/repos/apt xenial-pgdg/main i386 Packages [230 kB]
-[33m15% [10 Sources 454 kB/1,103 kB 41%] [11 Packages 122 kB/1,019 kB 12%] [12 Pack[0m[33m                                                                               15% [10 Sources 470 kB/1,103 kB 43%] [11 Packages 138 kB/1,019 kB 14%][0m[33m15% [12 Packages store 0 B] [10 Sources 470 kB/1,103 kB 43%] [11 Packages 138 k[0m[33m                                                                               15% [10 Sources 528 kB/1,103 kB 48%] [11 Packages 194 kB/1,019 kB 19%][0m[33m                                                                      17% [11 Packages 493 kB/1,019 kB 48%][0m[33m17% [10 Sources store 0 B] [Waiting for headers] [11 Packages 493 kB/1,019 kB 4[0m[33m                                                                               17% [Waiting for headers] [11 Packages 852 kB/1,019 kB 84%][0m[33m                                                           18% [Waiting for headers][0m[33m18% [11 Packages store 0 B] [Waiting for headers] [Waiting for headers][0m                                                                       Get:13 http://archive.ubuntu.com/ubuntu xenial/restricted Sources [5,179 B]
-[33m18% [11 Packages store 0 B] [13 Sources 5,179 B/5,179 B 100%] [Waiting for head[0m[33m                                                                               18% [11 Packages store 0 B] [Waiting for headers][0m[33m                                                 18% [Waiting for headers] [Waiting for headers][0m[33m18% [13 Sources store 0 B] [Waiting for headers] [Waiting for headers][0m[33m                                                                      18% [Waiting for headers] [Waiting for headers][0m                                               Get:14 http://security.ubuntu.com/ubuntu xenial-security/main i386 Packages [794 kB]
-[33m18% [Waiting for headers] [14 Packages 14.0 kB/794 kB 2%][0m                                                         Get:15 http://archive.ubuntu.com/ubuntu xenial/universe Sources [9,802 kB]
-[33m18% [15 Sources 20.4 kB/9,802 kB 0%] [14 Packages 237 kB/794 kB 30%][0m[33m                                                                    20% [15 Sources 682 kB/9,802 kB 7%][0m[33m20% [14 Packages store 0 B] [15 Sources 703 kB/9,802 kB 7%] [Waiting for header[0m[33m                                                                               21% [15 Sources 1,476 kB/9,802 kB 15%] [Waiting for headers][0m                                                            Get:16 http://security.ubuntu.com/ubuntu xenial-security/main Translation-en [435 kB]
-[33m23% [15 Sources 2,292 kB/9,802 kB 23%] [16 Translation-en 35.9 kB/435 kB 8%][0m[33m                                                                            24% [15 Sources 2,875 kB/9,802 kB 29%][0m[33m24% [16 Translation-en store 0 B] [15 Sources 2,875 kB/9,802 kB 29%][0m[33m                                                                    29% [15 Sources 5,637 kB/9,802 kB 58%] [Waiting for headers][0m                                                            Get:17 http://security.ubuntu.com/ubuntu xenial-security/universe amd64 Packages [593 kB]
-[33m29% [15 Sources 5,637 kB/9,802 kB 58%] [17 Packages 17.8 kB/593 kB 3%][0m[33m                                                                      30% [15 Sources 6,239 kB/9,802 kB 64%][0m[33m30% [17 Packages store 0 B] [15 Sources 6,239 kB/9,802 kB 64%] [Waiting for hea[0m[33m                                                                               34% [15 Sources 8,651 kB/9,802 kB 88%] [Waiting for headers][0m                                                            Get:18 http://security.ubuntu.com/ubuntu xenial-security/universe i386 Packages [510 kB]
-[33m35% [15 Sources 9,330 kB/9,802 kB 95%] [18 Packages 17.8 kB/510 kB 3%][0m[33m                                                                      36% [18 Packages 283 kB/510 kB 56%][0m[33m36% [15 Sources store 0 B] [Waiting for headers] [18 Packages 301 kB/510 kB 59%[0m[33m                                                                               37% [15 Sources store 0 B] [Waiting for headers][0m                                                Get:19 http://archive.ubuntu.com/ubuntu xenial/multiverse Sources [215 kB]
-[33m37% [15 Sources store 0 B] [19 Sources 0 B/215 kB 0%] [Waiting for headers][0m[33m                                                                           37% [15 Sources store 0 B] [Waiting for headers][0m                                                Get:20 http://security.ubuntu.com/ubuntu xenial-security/universe Translation-en [259 kB]
-[33m37% [15 Sources store 0 B] [Waiting for headers] [20 Translation-en 0 B/259 kB [0m[33m                                                                               37% [15 Sources store 0 B] [Waiting for headers][0m                                                Get:21 http://archive.ubuntu.com/ubuntu xenial/main amd64 Packages [1,558 kB]
-[33m38% [15 Sources store 0 B] [21 Packages 261 kB/1,558 kB 17%] [Waiting for heade[0m                                                                               Get:22 http://security.ubuntu.com/ubuntu xenial-security/multiverse amd64 Packages [6,280 B]
-[33m39% [15 Sources store 0 B] [21 Packages 1,047 kB/1,558 kB 67%] [22 Packages 6,2[0m[33m                                                                               39% [15 Sources store 0 B] [21 Packages 1,047 kB/1,558 kB 67%][0m[33m                                                              40% [15 Sources store 0 B] [Waiting for headers][0m                                                Get:23 http://security.ubuntu.com/ubuntu xenial-security/multiverse i386 Packages [6,457 B]
-[33m40% [15 Sources store 0 B] [Waiting for headers] [Waiting for headers][0m                                                                      Get:24 http://archive.ubuntu.com/ubuntu xenial/main i386 Packages [1,552 kB]
-[33m40% [15 Sources store 0 B] [24 Packages 0 B/1,552 kB 0%] [Waiting for headers][0m[33m                                                                              42% [15 Sources store 0 B] [Waiting for headers][0m                                                Get:25 http://security.ubuntu.com/ubuntu xenial-security/multiverse Translation-en [2,735 B]
-[33m42% [15 Sources store 0 B] [Waiting for headers][0m                                                Get:26 http://archive.ubuntu.com/ubuntu xenial/main Translation-en [799 kB]
-[33m42% [15 Sources store 0 B] [26 Translation-en 0 B/799 kB 0%][0m[33m                                                            43% [15 Sources store 0 B][0m[33m                          44% [Waiting for headers][0m[33m44% [18 Packages store 0 B] [Waiting for headers][0m                                                 Get:27 http://archive.ubuntu.com/ubuntu xenial/restricted amd64 Packages [14.1 kB]
-[33m44% [18 Packages store 0 B] [27 Packages 0 B/14.1 kB 0%][0m[33m                                                        44% [18 Packages store 0 B][0m[33m                           44% [Waiting for headers][0m[33m44% [19 Sources store 0 B] [Waiting for headers][0m[33m                                                44% [Waiting for headers][0m[33m44% [20 Translation-en store 0 B] [Waiting for headers][0m[33m                                                       44% [Waiting for headers][0m[33m44% [22 Packages store 0 B] [Waiting for headers][0m[33m                                                 44% [Waiting for headers][0m[33m44% [21 Packages store 0 B] [Waiting for headers][0m                                                 Get:28 http://archive.ubuntu.com/ubuntu xenial/restricted i386 Packages [14.5 kB]
-[33m44% [21 Packages store 0 B] [28 Packages 0 B/14.5 kB 0%][0m[33m                                                        44% [21 Packages store 0 B][0m[33m                           44% [Waiting for headers][0m[33m44% [23 Packages store 0 B] [Waiting for headers][0m[33m                                                 45% [Waiting for headers][0m[33m45% [24 Packages store 0 B] [Waiting for headers][0m                                                 Get:29 http://archive.ubuntu.com/ubuntu xenial/restricted Translation-en [3,019 B]
-[33m45% [24 Packages store 0 B] [29 Translation-en 0 B/3,019 B 0%][0m[33m                                                              45% [24 Packages store 0 B][0m[33m                           45% [Waiting for headers][0m[33m45% [25 Translation-en store 0 B] [Waiting for headers][0m[33m                                                       45% [Waiting for headers][0m[33m45% [26 Translation-en store 0 B] [Waiting for headers][0m                                                       Get:30 http://archive.ubuntu.com/ubuntu xenial/universe amd64 Packages [9,827 kB]
-[33m45% [26 Translation-en store 0 B] [30 Packages 0 B/9,827 kB 0%][0m[33m                                                               49% [30 Packages 2,817 kB/9,827 kB 29%][0m[33m49% [27 Packages store 0 B] [30 Packages 2,817 kB/9,827 kB 29%][0m[33m                                                               50% [30 Packages 2,882 kB/9,827 kB 29%][0m[33m50% [28 Packages store 0 B] [30 Packages 2,882 kB/9,827 kB 29%][0m[33m                                                               50% [30 Packages 3,013 kB/9,827 kB 31%][0m[33m50% [29 Translation-en store 0 B] [30 Packages 3,013 kB/9,827 kB 31%][0m[33m                                                                     50% [30 Packages 3,013 kB/9,827 kB 31%][0m[33m                                       60% [Working][0m[33m60% [30 Packages store 0 B] [Waiting for headers][0m                                                 Get:31 http://archive.ubuntu.com/ubuntu xenial/universe i386 Packages [9,804 kB]
-[33m61% [30 Packages store 0 B] [31 Packages 64.2 kB/9,804 kB 1%][0m[33m                                                             75% [30 Packages store 0 B][0m                           Get:32 http://archive.ubuntu.com/ubuntu xenial/universe Translation-en [6,256 kB]
-[33m75% [30 Packages store 0 B] [32 Translation-en 0 B/6,256 kB 0%][0m[33m                                                               85% [30 Packages store 0 B][0m[33m                           85% [Waiting for headers][0m[33m85% [31 Packages store 0 B] [Waiting for headers][0m                                                 Get:33 http://archive.ubuntu.com/ubuntu xenial/multiverse amd64 Packages [176 kB]
-[33m85% [31 Packages store 0 B] [33 Packages 0 B/176 kB 0%][0m[33m                                                       85% [31 Packages store 0 B][0m                           Get:34 http://archive.ubuntu.com/ubuntu xenial/multiverse i386 Packages [172 kB]
-[33m85% [31 Packages store 0 B] [34 Packages 0 B/172 kB 0%][0m[33m                                                       85% [31 Packages store 0 B][0m                           Get:35 http://archive.ubuntu.com/ubuntu xenial/multiverse Translation-en [131 kB]
-[33m85% [31 Packages store 0 B] [35 Translation-en 0 B/131 kB 0%][0m[33m                                                             86% [31 Packages store 0 B][0m                           Get:36 http://archive.ubuntu.com/ubuntu xenial-updates/main Sources [435 kB]
-[33m86% [31 Packages store 0 B] [36 Sources 0 B/435 kB 0%][0m[33m                                                      86% [31 Packages store 0 B][0m[33m                           86% [Waiting for headers][0m[33m86% [32 Translation-en store 0 B] [Waiting for headers][0m                                                       Get:37 http://archive.ubuntu.com/ubuntu xenial-updates/restricted Sources [2,696 B]
-[33m86% [32 Translation-en store 0 B] [Connecting to archive.ubuntu.com (91.189.88.[0m                                                                               Get:38 http://archive.ubuntu.com/ubuntu xenial-updates/universe Sources [332 kB]
-[33m                                                                               86% [32 Translation-en store 0 B] [38 Sources 12.7 kB/332 kB 4%][0m[33m                                                                87% [38 Sources 38.4 kB/332 kB 12%][0m[33m87% [33 Packages store 0 B] [38 Sources 38.4 kB/332 kB 12%][0m[33m                                                           87% [38 Sources 38.4 kB/332 kB 12%][0m[33m87% [34 Packages store 0 B] [38 Sources 38.4 kB/332 kB 12%][0m[33m                                                           87% [38 Sources 38.4 kB/332 kB 12%][0m[33m87% [35 Translation-en store 0 B] [38 Sources 38.4 kB/332 kB 12%][0m[33m                                                                 87% [38 Sources 38.4 kB/332 kB 12%][0m[33m87% [36 Sources store 0 B] [38 Sources 38.4 kB/332 kB 12%][0m[33m                                                          87% [38 Sources 48.7 kB/332 kB 15%][0m[33m87% [37 Sources store 0 B] [38 Sources 48.7 kB/332 kB 15%][0m[33m                                                          87% [38 Sources 48.7 kB/332 kB 15%][0m[33m                                   88% [Working][0m[33m88% [38 Sources store 0 B] [Waiting for headers][0m[33m                                                88% [Waiting for headers][0m                         Get:39 http://archive.ubuntu.com/ubuntu xenial-updates/multiverse Sources [9,431 B]
-[33m88% [39 Sources 9,431 B/9,431 B 100%][0m[33m                                     88% [Working][0m[33m88% [39 Sources store 0 B] [Waiting for headers][0m[33m                                                88% [Waiting for headers][0m                         Get:40 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 Packages [1,396 kB]
-[33m88% [40 Packages 4,941 B/1,396 kB 0%][0m[33m                                     90% [Working][0m[33m90% [40 Packages store 0 B] [Waiting for headers][0m                                                 Get:41 http://archive.ubuntu.com/ubuntu xenial-updates/main i386 Packages [1,146 kB]
-[33m90% [40 Packages store 0 B] [41 Packages 0 B/1,146 kB 0%][0m[33m                                                         91% [41 Packages 348 kB/1,146 kB 30%][0m[33m                                     92% [Working][0m[33m92% [41 Packages store 0 B] [Waiting for headers][0m[33m                                                 92% [Waiting for headers][0m                         Get:42 http://archive.ubuntu.com/ubuntu xenial-updates/main Translation-en [592 kB]
-[33m92% [42 Translation-en 25.6 kB/592 kB 4%][0m[33m                                         93% [Working][0m[33m93% [42 Translation-en store 0 B] [Waiting for headers][0m[33m                                                       93% [Waiting for headers][0m                         Get:43 http://archive.ubuntu.com/ubuntu xenial-updates/restricted amd64 Packages [13.1 kB]
-[33m94% [43 Packages 13.1 kB/13.1 kB 100%][0m[33m                                      94% [Working][0m[33m94% [43 Packages store 0 B][0m[33m                           94% [Waiting for headers][0m                         Get:44 http://archive.ubuntu.com/ubuntu xenial-updates/restricted i386 Packages [13.1 kB]
-[33m94% [44 Packages 13.1 kB/13.1 kB 100%][0m[33m                                      94% [Working][0m[33m94% [44 Packages store 0 B] [Waiting for headers][0m[33m                                                 94% [Waiting for headers][0m                         Get:45 http://archive.ubuntu.com/ubuntu xenial-updates/restricted Translation-en [2,337 B]
-[33m94% [45 Translation-en 2,337 B/2,337 B 100%][0m[33m                                            94% [Working][0m[33m94% [45 Translation-en store 0 B] [Waiting for headers][0m[33m                                                       94% [Waiting for headers][0m                         Get:46 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 Packages [996 kB]
-[33m94% [46 Packages 25.6 kB/996 kB 3%][0m[33m                                   96% [Working][0m[33m96% [46 Packages store 0 B] [Waiting for headers][0m[33m                                                 96% [Waiting for headers][0m                         Get:47 http://archive.ubuntu.com/ubuntu xenial-updates/universe i386 Packages [903 kB]
-[33m96% [47 Packages 19.0 kB/903 kB 2%][0m[33m                                   97% [Working][0m[33m97% [47 Packages store 0 B] [Waiting for headers][0m[33m                                                 97% [Waiting for headers][0m                         Get:48 http://archive.ubuntu.com/ubuntu xenial-updates/universe Translation-en [444 kB]
-[33m97% [48 Translation-en 20.4 kB/444 kB 5%][0m[33m                                         98% [Working][0m[33m98% [48 Translation-en store 0 B] [Waiting for headers][0m[33m                                                       98% [Waiting for headers][0m                         Get:49 http://archive.ubuntu.com/ubuntu xenial-updates/multiverse amd64 Packages [19.3 kB]
-[33m98% [49 Packages 19.3 kB/19.3 kB 100%][0m[33m                                      98% [Working][0m[33m98% [49 Packages store 0 B][0m[33m                           98% [Waiting for headers][0m                         Get:50 http://archive.ubuntu.com/ubuntu xenial-updates/multiverse i386 Packages [18.1 kB]
-[33m98% [50 Packages 18.1 kB/18.1 kB 100%]                            8,721 kB/s 0s[0m[33m98% [Waiting for headers]                                         8,721 kB/s 0s[0m[33m98% [50 Packages store 0 B] [Waiting for headers]                 8,721 kB/s 0s[0m[33m98% [Waiting for headers]                                         8,721 kB/s 0s[0m                                                                               Get:51 http://archive.ubuntu.com/ubuntu xenial-updates/multiverse Translation-en [9,022 B]
-[33m98% [51 Translation-en 9,022 B/9,022 B 100%]                      8,721 kB/s 0s[0m[33m98% [Working]                                                     8,721 kB/s 0s[0m[33m98% [51 Translation-en store 0 B] [Waiting for headers]           8,721 kB/s 0s[0m[33m99% [Waiting for headers]                                         8,721 kB/s 0s[0m                                                                               Get:52 http://archive.ubuntu.com/ubuntu xenial-backports/main Sources [5,073 B]
-[33m99% [52 Sources 5,073 B/5,073 B 100%]                             8,721 kB/s 0s[0m[33m99% [Working]                                                     8,721 kB/s 0s[0m[33m99% [52 Sources store 0 B] [Waiting for headers]                  8,721 kB/s 0s[0m[33m99% [Waiting for headers]                                         8,721 kB/s 0s[0m                                                                               Get:53 http://archive.ubuntu.com/ubuntu xenial-backports/universe Sources [7,665 B]
-[33m99% [53 Sources 7,665 B/7,665 B 100%]                             8,721 kB/s 0s[0m[33m99% [Working]                                                     8,721 kB/s 0s[0m[33m99% [53 Sources store 0 B] [Waiting for headers]                  8,721 kB/s 0s[0m[33m99% [Waiting for headers]                                         8,721 kB/s 0s[0m                                                                               Get:54 http://archive.ubuntu.com/ubuntu xenial-backports/main amd64 Packages [7,942 B]
-[33m99% [54 Packages 7,942 B/7,942 B 100%]                            8,721 kB/s 0s[0m[33m99% [Working]                                                     8,721 kB/s 0s[0m[33m99% [54 Packages store 0 B] [Waiting for headers]                 8,721 kB/s 0s[0m[33m99% [Waiting for headers]                                         8,721 kB/s 0s[0m                                                                               Get:55 http://archive.ubuntu.com/ubuntu xenial-backports/main i386 Packages [7,942 B]
-[33m99% [55 Packages 7,942 B/7,942 B 100%]                            8,721 kB/s 0s[0m[33m99% [Working]                                                     8,721 kB/s 0s[0m[33m99% [55 Packages store 0 B] [Waiting for headers]                 8,721 kB/s 0s[0m[33m99% [Waiting for headers]                                         8,721 kB/s 0s[0m                                                                               Get:56 http://archive.ubuntu.com/ubuntu xenial-backports/main Translation-en [4,571 B]
-[33m99% [56 Translation-en 4,571 B/4,571 B 100%]                      8,721 kB/s 0s[0m[33m99% [Working]                                                     8,721 kB/s 0s[0m[33m99% [56 Translation-en store 0 B]                                 8,721 kB/s 0s[0m[33m99% [Waiting for headers]                                         8,721 kB/s 0s[0m                                                                               Get:57 http://archive.ubuntu.com/ubuntu xenial-backports/universe amd64 Packages [8,807 B]
-[33m99% [57 Packages 8,807 B/8,807 B 100%]                            8,721 kB/s 0s[0m[33m99% [Working]                                                     8,721 kB/s 0s[0m[33m99% [57 Packages store 0 B] [Waiting for headers]                 8,721 kB/s 0s[0m[33m100% [Waiting for headers]                                        8,721 kB/s 0s[0m                                                                               Get:58 http://archive.ubuntu.com/ubuntu xenial-backports/universe i386 Packages [8,450 B]
-[33m100% [58 Packages 8,450 B/8,450 B 100%]                           8,721 kB/s 0s[0m[33m100% [Working]                                                    8,721 kB/s 0s[0m[33m100% [58 Packages store 0 B] [Connecting to archive.ubuntu.com (91.189.88.149)][0m[33m100% [Connecting to archive.ubuntu.com (91.189.88.149)]           8,721 kB/s 0s[0m                                                                               Get:59 http://archive.ubuntu.com/ubuntu xenial-backports/universe Translation-en [4,428 B]
-[33m100% [59 Translation-en 4,428 B/4,428 B 100%]                     8,721 kB/s 0s[0m[33m100% [Working]                                                    8,721 kB/s 0s[0m[33m100% [59 Translation-en store 0 B]                                8,721 kB/s 0s[0m[33m100% [Working]                                                    8,721 kB/s 0s[0m                                                                               Fetched 52.9 MB in 7s (7,492 kB/s)
-Reading package lists... 0%Reading package lists... 0%Reading package lists... 1%Reading package lists... 3%Reading package lists... 3%Reading package lists... 7%Reading package lists... 7%Reading package lists... 9%Reading package lists... 9%Reading package lists... 9%Reading package lists... 9%Reading package lists... 9%Reading package lists... 9%Reading package lists... 9%Reading package lists... 9%Reading package lists... 32%Reading package lists... 32%Reading package lists... 46%Reading package lists... 54%Reading package lists... 54%Reading package lists... 67%Reading package lists... 67%Reading package lists... 67%Reading package lists... 67%Reading package lists... 67%Reading package lists... 67%Reading package lists... 68%Reading package lists... 68%Reading package lists... 72%Reading package lists... 72%Reading package lists... 75%Reading package lists... 75%Reading package lists... 78%Reading package lists... 78%Reading package lists... 78%Reading package lists... 78%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 81%Reading package lists... 81%Reading package lists... 84%Reading package lists... 84%Reading package lists... 85%Reading package lists... 85%Reading package lists... 85%Reading package lists... 85%Reading package lists... 85%Reading package lists... 85%Reading package lists... 85%Reading package lists... 85%Reading package lists... 85%Reading package lists... 85%Reading package lists... 85%Reading package lists... 85%Reading package lists... 85%Reading package lists... 85%Reading package lists... 85%Reading package lists... 85%Reading package lists... 85%Reading package lists... 85%Reading package lists... 85%Reading package lists... 85%Reading package lists... 88%Reading package lists... 88%Reading package lists... 91%Reading package lists... 91%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 95%Reading package lists... 95%Reading package lists... 97%Reading package lists... 97%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
-Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 1%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
-Reading state information... 0%Reading state information... 0%Reading state information... Done
-256 packages can be upgraded. Run 'apt list --upgradable' to see them.
-travis_time:end:06e916f8:start=1577666747303439284,finish=1577666758890253468,duration=11586814184,event=before_install[0Ktravis_fold:end:before_install.1[0Ktravis_fold:start:before_install.2[0Ktravis_time:start:06042008[0K$ sudo apt install apache2
-Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
-Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
-Reading state information... 0%Reading state information... 0%Reading state information... Done
-The following additional packages will be installed:
-  apache2-bin apache2-data apache2-utils libaprutil1-dbd-sqlite3
-  libaprutil1-ldap liblua5.1-0
-Suggested packages:
-  apache2-doc apache2-suexec-pristine | apache2-suexec-custom
-The following NEW packages will be installed:
-  apache2 apache2-bin apache2-data apache2-utils libaprutil1-dbd-sqlite3
-  libaprutil1-ldap liblua5.1-0
-0 upgraded, 7 newly installed, 0 to remove and 256 not upgraded.
-Need to get 1,383 kB of archives.
-After this operation, 5,891 kB of additional disk space will be used.
-[33m0% [Working][0m            Get:1 http://archive.ubuntu.com/ubuntu xenial/main amd64 libaprutil1-dbd-sqlite3 amd64 1.5.4-1build1 [10.6 kB]
-[33m1% [1 libaprutil1-dbd-sqlite3 10.6 kB/10.6 kB 100%][0m[33m                                                   3% [Working][0m            Get:2 http://archive.ubuntu.com/ubuntu xenial/main amd64 libaprutil1-ldap amd64 1.5.4-1build1 [8,720 B]
-[33m4% [2 libaprutil1-ldap 4,872 B/8,720 B 56%][0m[33m                                           7% [Working][0m            Get:3 http://archive.ubuntu.com/ubuntu xenial/main amd64 liblua5.1-0 amd64 5.1.5-8ubuntu1 [102 kB]
-[33m7% [3 liblua5.1-0 3,581 B/102 kB 3%][0m[33m                                    16% [Working][0m             Get:4 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 apache2-bin amd64 2.4.18-2ubuntu3.14 [930 kB]
-[33m16% [4 apache2-bin 4,869 B/930 kB 1%][0m[33m                                     72% [Working][0m             Get:5 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 apache2-utils amd64 2.4.18-2ubuntu3.14 [82.1 kB]
-[33m73% [5 apache2-utils 15.2 kB/82.1 kB 18%][0m[33m                                         80% [Working][0m             Get:6 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 apache2-data all 2.4.18-2ubuntu3.14 [162 kB]
-[33m81% [6 apache2-data 15.2 kB/162 kB 9%][0m[33m                                      92% [Working][0m             Get:7 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 apache2 amd64 2.4.18-2ubuntu3.14 [86.5 kB]
-[33m93% [7 apache2 15.2 kB/86.5 kB 18%][0m[33m                                   100% [Working][0m              Fetched 1,383 kB in 1s (1,122 kB/s)
-
-7[0;39r8[1ASelecting previously unselected package libaprutil1-dbd-sqlite3:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 124189 files and directories currently installed.)
-Preparing to unpack .../libaprutil1-dbd-sqlite3_1.5.4-1build1_amd64.deb ...
-7[40;0f[42m[30mProgress: [  0%][49m[39m [..........................................................] 87[40;0f[42m[30mProgress: [  2%][49m[39m [##........................................................] 8Unpacking libaprutil1-dbd-sqlite3:amd64 (1.5.4-1build1) ...
-7[40;0f[42m[30mProgress: [  5%][49m[39m [####......................................................] 87[40;0f[42m[30mProgress: [  8%][49m[39m [#####.....................................................] 8Selecting previously unselected package libaprutil1-ldap:amd64.
-Preparing to unpack .../libaprutil1-ldap_1.5.4-1build1_amd64.deb ...
-7[40;0f[42m[30mProgress: [ 11%][49m[39m [#######...................................................] 8Unpacking libaprutil1-ldap:amd64 (1.5.4-1build1) ...
-7[40;0f[42m[30mProgress: [ 13%][49m[39m [#########.................................................] 87[40;0f[42m[30mProgress: [ 16%][49m[39m [##########................................................] 8Selecting previously unselected package liblua5.1-0:amd64.
-Preparing to unpack .../liblua5.1-0_5.1.5-8ubuntu1_amd64.deb ...
-7[40;0f[42m[30mProgress: [ 19%][49m[39m [############..............................................] 8Unpacking liblua5.1-0:amd64 (5.1.5-8ubuntu1) ...
-7[40;0f[42m[30mProgress: [ 22%][49m[39m [#############.............................................] 87[40;0f[42m[30mProgress: [ 25%][49m[39m [###############...........................................] 8Selecting previously unselected package apache2-bin.
-Preparing to unpack .../apache2-bin_2.4.18-2ubuntu3.14_amd64.deb ...
-7[40;0f[42m[30mProgress: [ 27%][49m[39m [#################.........................................] 8Unpacking apache2-bin (2.4.18-2ubuntu3.14) ...
-7[40;0f[42m[30mProgress: [ 30%][49m[39m [##################........................................] 87[40;0f[42m[30mProgress: [ 33%][49m[39m [####################......................................] 8Selecting previously unselected package apache2-utils.
-Preparing to unpack .../apache2-utils_2.4.18-2ubuntu3.14_amd64.deb ...
-7[40;0f[42m[30mProgress: [ 36%][49m[39m [#####################.....................................] 8Unpacking apache2-utils (2.4.18-2ubuntu3.14) ...
-7[40;0f[42m[30mProgress: [ 38%][49m[39m [#######################...................................] 87[40;0f[42m[30mProgress: [ 41%][49m[39m [#########################.................................] 8Selecting previously unselected package apache2-data.
-Preparing to unpack .../apache2-data_2.4.18-2ubuntu3.14_all.deb ...
-7[40;0f[42m[30mProgress: [ 44%][49m[39m [##########################................................] 8Unpacking apache2-data (2.4.18-2ubuntu3.14) ...
-7[40;0f[42m[30mProgress: [ 47%][49m[39m [############################..............................] 87[40;0f[42m[30mProgress: [ 50%][49m[39m [#############################.............................] 8Selecting previously unselected package apache2.
-Preparing to unpack .../apache2_2.4.18-2ubuntu3.14_amd64.deb ...
-7[40;0f[42m[30mProgress: [ 52%][49m[39m [###############################...........................] 8Unpacking apache2 (2.4.18-2ubuntu3.14) ...
-7[40;0f[42m[30mProgress: [ 55%][49m[39m [#################################.........................] 87[40;0f[42m[30mProgress: [ 58%][49m[39m [##################################........................] 8Processing triggers for libc-bin (2.23-0ubuntu11) ...
-Processing triggers for man-db (2.7.5-1) ...
-Processing triggers for ufw (0.35-0ubuntu2) ...
-Processing triggers for systemd (229-4ubuntu21.4) ...
-Processing triggers for ureadahead (0.100.0-19) ...
-Setting up libaprutil1-dbd-sqlite3:amd64 (1.5.4-1build1) ...
-7[40;0f[42m[30mProgress: [ 61%][49m[39m [####################################......................] 87[40;0f[42m[30mProgress: [ 63%][49m[39m [######################################....................] 8Setting up libaprutil1-ldap:amd64 (1.5.4-1build1) ...
-7[40;0f[42m[30mProgress: [ 66%][49m[39m [#######################################...................] 87[40;0f[42m[30mProgress: [ 69%][49m[39m [#########################################.................] 8Setting up liblua5.1-0:amd64 (5.1.5-8ubuntu1) ...
-7[40;0f[42m[30mProgress: [ 72%][49m[39m [##########################################................] 87[40;0f[42m[30mProgress: [ 75%][49m[39m [############################################..............] 8Setting up apache2-bin (2.4.18-2ubuntu3.14) ...
-7[40;0f[42m[30mProgress: [ 77%][49m[39m [##############################################............] 87[40;0f[42m[30mProgress: [ 80%][49m[39m [###############################################...........] 8Setting up apache2-utils (2.4.18-2ubuntu3.14) ...
-7[40;0f[42m[30mProgress: [ 83%][49m[39m [#################################################.........] 87[40;0f[42m[30mProgress: [ 86%][49m[39m [##################################################........] 8Setting up apache2-data (2.4.18-2ubuntu3.14) ...
-7[40;0f[42m[30mProgress: [ 88%][49m[39m [####################################################......] 87[40;0f[42m[30mProgress: [ 91%][49m[39m [######################################################....] 8Setting up apache2 (2.4.18-2ubuntu3.14) ...
-7[40;0f[42m[30mProgress: [ 94%][49m[39m [#######################################################...] 8Enabling module mpm_event.
-Enabling module authz_core.
-Enabling module authz_host.
-Enabling module authn_core.
-Enabling module auth_basic.
-Enabling module access_compat.
-Enabling module authn_file.
-Enabling module authz_user.
-Enabling module alias.
-Enabling module dir.
-Enabling module autoindex.
-Enabling module env.
-Enabling module mime.
-Enabling module negotiation.
-Enabling module setenvif.
-Enabling module filter.
-Enabling module deflate.
-Enabling module status.
-Enabling conf charset.
-Enabling conf localized-error-pages.
-Enabling conf other-vhosts-access-log.
-Enabling conf security.
-Enabling conf serve-cgi-bin.
-Enabling site 000-default.
-7[40;0f[42m[30mProgress: [ 97%][49m[39m [#########################################################.] 8Processing triggers for libc-bin (2.23-0ubuntu11) ...
-Processing triggers for systemd (229-4ubuntu21.4) ...
-Processing triggers for ureadahead (0.100.0-19) ...
-Processing triggers for ufw (0.35-0ubuntu2) ...
-
-7[0;40r8[1A[Jtravis_time:end:06042008:start=1577666758893881879,finish=1577666766460733290,duration=7566851411,event=before_install[0Ktravis_fold:end:before_install.2[0Ktravis_fold:start:before_install.3[0Ktravis_time:start:155435cf[0K$ yarn add --ignore-engines headless-chrome-crawler
-[2K[1G[1myarn add v1.15.2[22m
-[2K[1G[34minfo[39m No lockfile found.
-[2K[1G[2m[1/4][22m Resolving packages...
-[1G⠁ [0K[1G⠂ headless-chrome-crawler[0K[1G⠄ headless-chrome-crawler[0K[1G⡀ headless-chrome-crawler[0K[1G⢀ headless-chrome-crawler[0K[1G⠠ headless-chrome-crawler[0K[1G⠐ headless-chrome-crawler[0K[1G⠈ headless-chrome-crawler[0K[1G⠁ headless-chrome-crawler[0K[1G⠂ robots-parser@1.0.2[0K[1G⠄ tough-cookie@>=2.3.3[0K[1G⡀ delayed-stream@~1.0.0[0K[1G⢀ mime-db@1.42.0[0K[1G⠠ async-limiter@~1.0.0[0K[1G⠐ safer-buffer@~2.1.0[0K[1G⠈ pend@~1.2.0[0K[1G⠁ concat-map@0.0.1[0K[2K[1G[2K[1G[2m[2/4][22m Fetching packages...
-[2K[1G[2m[3/4][22m Linking dependencies...
-[2K[1G[33mwarning[39m " > headless-chrome-crawler@1.8.0" has unmet peer dependency "redis@2.8.0".
-[2K[1G[2m[4/4][22m Building fresh packages...
-[2K[1G[32msuccess[39m Saved lockfile.
-[2K[1G[32msuccess[39m Saved 88 new dependencies.
-[2K[1G[34minfo[39m Direct dependencies
-└─ headless-chrome-crawler@1.8.0
-[2K[1G[34minfo[39m All dependencies
-├─ agent-base@4.3.0
-├─ ajv@5.5.2
-├─ asn1@0.2.4
-├─ async-limiter@1.0.1
-├─ asynckit@0.4.0
-├─ aws-sign2@0.7.0
-├─ aws4@1.9.0
-├─ balanced-match@1.0.0
-├─ bcrypt-pbkdf@1.0.2
-├─ bluebird@3.7.2
-├─ brace-expansion@1.1.11
-├─ buffer-from@1.1.1
-├─ caseless@0.12.0
-├─ co@4.6.0
-├─ combined-stream@1.0.8
-├─ concat-map@0.0.1
-├─ concat-stream@1.6.2
-├─ core-util-is@1.0.2
-├─ dashdash@1.14.1
-├─ delayed-stream@1.0.0
-├─ ecc-jsbn@0.1.2
-├─ es6-promise@4.2.8
-├─ es6-promisify@5.0.0
-├─ extend@3.0.2
-├─ extract-zip@1.6.7
-├─ extsprintf@1.3.0
-├─ fast-deep-equal@1.1.0
-├─ fast-json-stable-stringify@2.1.0
-├─ fd-slicer@1.0.1
-├─ forever-agent@0.6.1
-├─ form-data@2.3.3
-├─ fs.realpath@1.0.0
-├─ getpass@0.1.7
-├─ glob@7.1.6
-├─ har-schema@2.0.0
-├─ har-validator@5.0.3
-├─ headless-chrome-crawler@1.8.0
-├─ http-signature@1.2.0
-├─ https-proxy-agent@2.2.4
-├─ inflight@1.0.6
-├─ inherits@2.0.4
-├─ ip-regex@2.1.0
-├─ is-typedarray@1.0.0
-├─ isarray@1.0.0
-├─ isstream@0.1.2
-├─ jquery@3.3.1
-├─ json-schema-traverse@0.3.1
-├─ json-schema@0.2.3
-├─ json-stringify-safe@5.0.1
-├─ jsprim@1.4.1
-├─ lodash@4.17.5
-├─ mime-db@1.42.0
-├─ mime-types@2.1.25
-├─ mime@2.4.4
-├─ minimatch@3.0.4
-├─ minimist@0.0.8
-├─ mkdirp@0.5.1
-├─ oauth-sign@0.8.2
-├─ path-is-absolute@1.0.1
-├─ pend@1.2.0
-├─ performance-now@2.1.0
-├─ process-nextick-args@2.0.1
-├─ progress@2.0.3
-├─ proxy-from-env@1.0.0
-├─ psl@1.7.0
-├─ punycode@1.4.1
-├─ puppeteer@1.5.0
-├─ qs@6.5.2
-├─ readable-stream@2.3.6
-├─ request-promise-core@1.1.1
-├─ request-promise@4.2.2
-├─ request@2.87.0
-├─ rimraf@2.7.1
-├─ robots-parser@1.0.2
-├─ safe-buffer@5.1.2
-├─ safer-buffer@2.1.2
-├─ sshpk@1.16.1
-├─ stealthy-require@1.1.1
-├─ string_decoder@1.1.1
-├─ tough-cookie@3.0.1
-├─ tunnel-agent@0.6.0
-├─ tweetnacl@0.14.5
-├─ typedarray@0.0.6
-├─ util-deprecate@1.0.2
-├─ uuid@3.3.3
-├─ verror@1.10.0
-├─ ws@5.2.2
-└─ yauzl@2.4.1
-[2K[1GDone in 7.98s.
-travis_time:end:155435cf:start=1577666766464674927,finish=1577666774609086556,duration=8144411629,event=before_install[0Ktravis_fold:end:before_install.3[0Ktravis_fold:start:before_install.4[0Ktravis_time:start:01ab36c5[0K$ sudo a2enmod headers proxy_http
-Enabling module headers.
-Considering dependency proxy for proxy_http:
-Enabling module proxy.
-Enabling module proxy_http.
-To activate the new configuration, you need to run:
-  service apache2 restart
-travis_time:end:01ab36c5:start=1577666774612946708,finish=1577666774656190144,duration=43243436,event=before_install[0Ktravis_fold:end:before_install.4[0Ktravis_fold:start:before_install.5[0Ktravis_time:start:1dd8db1e[0K$ printf "ProxyPass \"/\" \"http://localhost:8080/\"\nProxyPassReverse \"/\" \"http://localhost:8080/\"\n" | sudo tee /etc/apache2/conf-available/csp.conf
-ProxyPass "/" "http://localhost:8080/"
-ProxyPassReverse "/" "http://localhost:8080/"
-travis_time:end:1dd8db1e:start=1577666774659934516,finish=1577666774668165073,duration=8230557,event=before_install[0Ktravis_fold:end:before_install.5[0Ktravis_fold:start:before_install.6[0Ktravis_time:start:04da3c80[0K$ cat .travis-ci/csp.txt | sudo tee -a /etc/apache2/conf-available/csp.conf
-Header always set Content-Security-Policy: "default-src 'none'; base-uri 'none'; font-src 'self'; form-action 'none'; frame-ancestors 'none'; img-src 'self'; style-src 'self'; block-all-mixed-content; require-sri-for script; report-uri http://localhost/.travis-ci/report-uri.php"
-travis_time:end:04da3c80:start=1577666774671677900,finish=1577666774680069777,duration=8391877,event=before_install[0Ktravis_fold:end:before_install.6[0Ktravis_fold:start:before_install.7[0Ktravis_time:start:366c3864[0K$ sudo a2enconf csp.conf
-Enabling conf csp.
-To activate the new configuration, you need to run:
-  service apache2 reload
-travis_time:end:366c3864:start=1577666774683887490,finish=1577666774721347579,duration=37460089,event=before_install[0Ktravis_fold:end:before_install.7[0Ktravis_fold:start:before_install.8[0Ktravis_time:start:05c45bee[0K$ sudo service apache2 restart
-travis_time:end:05c45bee:start=1577666774725393544,finish=1577666776919670015,duration=2194276471,event=before_install[0Ktravis_fold:end:before_install.8[0Ktravis_fold:start:before_script.1[0Ktravis_time:start:039058b4[0K$ printf "<?php \$report = json_decode(file_get_contents('php://input')); if((in_array(\$report->{'csp-report'}->{'blocked-uri'}, array_map('trim', file('blocked-uri-exclusions.txt')))) || (in_array(\$report->{'csp-report'}->{'document-uri'}, array_map('trim', file('document-uri-exclusions.txt'))))) { exit(); } else { file_put_contents('csp-reports.txt', json_encode(\$report, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES) . \"\\\\n\\\\n\", FILE_APPEND); } ?>" > .travis-ci/report-uri.php
-travis_time:end:039058b4:start=1577666776924034917,finish=1577666776926690271,duration=2655354,event=before_script[0Ktravis_fold:end:before_script.1[0Ktravis_fold:start:before_script.2[0Ktravis_time:start:02f0efe4[0K$ touch .travis-ci/csp-reports.txt .travis-ci/blocked-uri-exclusions.txt .travis-ci/document-uri-exclusions.txt
-travis_time:end:02f0efe4:start=1577666776930051576,finish=1577666776933274694,duration=3223118,event=before_script[0Ktravis_fold:end:before_script.2[0Ktravis_fold:start:before_script.3[0Ktravis_time:start:221a25ad[0K$ printf "include_path = $(pwd)" > .travis-ci/php-conf-csp.ini
-travis_time:end:221a25ad:start=1577666776936532437,finish=1577666776939319198,duration=2786761,event=before_script[0Ktravis_fold:end:before_script.3[0Ktravis_fold:start:before_script.4[0Ktravis_time:start:31f16f28[0K$ phpenv config-add .travis-ci/php-conf-csp.ini
-File .travis-ci/php-conf-csp.ini added to /home/travis/.phpenv/versions/7.2/etc/conf.d.
-travis_time:end:31f16f28:start=1577666776942579245,finish=1577666776963604864,duration=21025619,event=before_script[0Ktravis_fold:end:before_script.4[0Ktravis_fold:start:before_script.5[0Ktravis_time:start:05576afc[0K$ php -S localhost:8080 > /dev/null 2>&1 &
-travis_time:end:05576afc:start=1577666776967067384,finish=1577666776969923725,duration=2856341,event=before_script[0Ktravis_fold:end:before_script.5[0Ktravis_fold:start:before_script.6[0Ktravis_time:start:0b6c224e[0K$ sleep 3
-travis_time:end:0b6c224e:start=1577666776974896318,finish=1577666779979296738,duration=3004400420,event=before_script[0Ktravis_fold:end:before_script.6[0Ktravis_time:start:03b30f22[0K$ chmod +x .travis-ci/build.sh && ./.travis-ci/build.sh
-Crawler Done
-
-Crawled Pages:
-response.url,response.status,links.length
-http://localhost/,200,0
-
-Content Security Policy Reports:
-{
-    "csp-report": {
-        "document-uri": "http://localhost/",
-        "referrer": "",
-        "violated-directive": "style-src",
-        "effective-directive": "style-src",
-        "original-policy": "default-src 'none'; base-uri 'none'; font-src 'self'; form-action 'none'; frame-ancestors 'none'; img-src 'self'; style-src 'self'; block-all-mixed-content; require-sri-for script; report-uri http://localhost/.travis-ci/report-uri.php",
-        "disposition": "enforce",
-        "blocked-uri": "inline",
-        "line-number": 3,
-        "source-file": "http://localhost/",
-        "status-code": 200,
-        "script-sample": ""
-    }
-}
-
-{
-    "csp-report": {
-        "document-uri": "http://localhost/",
-        "referrer": "",
-        "violated-directive": "style-src",
-        "effective-directive": "style-src",
-        "original-policy": "default-src 'none'; base-uri 'none'; font-src 'self'; form-action 'none'; frame-ancestors 'none'; img-src 'self'; style-src 'self'; block-all-mixed-content; require-sri-for script; report-uri http://localhost/.travis-ci/report-uri.php",
-        "disposition": "enforce",
-        "blocked-uri": "inline",
-        "line-number": 10,
-        "source-file": "http://localhost/",
-        "status-code": 200,
-        "script-sample": ""
-    }
-}
-
-{
-    "csp-report": {
-        "document-uri": "http://localhost/",
-        "referrer": "",
-        "violated-directive": "style-src",
-        "effective-directive": "style-src",
-        "original-policy": "default-src 'none'; base-uri 'none'; font-src 'self'; form-action 'none'; frame-ancestors 'none'; img-src 'self'; style-src 'self'; block-all-mixed-content; require-sri-for script; report-uri http://localhost/.travis-ci/report-uri.php",
-        "disposition": "enforce",
-        "blocked-uri": "inline",
-        "line-number": 17,
-        "source-file": "http://localhost/",
-        "status-code": 200,
-        "script-sample": ""
-    }
-}
-
-{
-    "csp-report": {
-        "document-uri": "http://localhost/",
-        "referrer": "",
-        "violated-directive": "style-src",
-        "effective-directive": "style-src",
-        "original-policy": "default-src 'none'; base-uri 'none'; font-src 'self'; form-action 'none'; frame-ancestors 'none'; img-src 'self'; style-src 'self'; block-all-mixed-content; require-sri-for script; report-uri http://localhost/.travis-ci/report-uri.php",
-        "disposition": "enforce",
-        "blocked-uri": "inline",
-        "line-number": 18,
-        "source-file": "http://localhost/",
-        "status-code": 200,
-        "script-sample": ""
-    }
-}travis_time:end:03b30f22:start=1577666779982974043,finish=1577666781806530380,duration=1823556337,event=script[0K[32;1mThe command "chmod +x .travis-ci/build.sh && ./.travis-ci/build.sh" exited with 0.[0m
-
-
-Done. Your build exited with 0.
-/home/travis/.travis/functions: line 533:  5696 Terminated              php -S localhost:8080 > /dev/null 2>&1

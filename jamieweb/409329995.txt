@@ -1,17 +1,0 @@
-travis_fold:start:step_start_instance[0K[33;1mStarting instance[0m
-✓ selected image "travis-ci-garnet-trusty-1512502259-986baf0"
-✓ rendered startup script
-✓ inserted instance
-• sleeping 5s before checking instance insert
-• polling for instance insert completion...
-✓ instance is ready (6.304s)
-travis_fold:end:step_start_instance[0Ktravis_fold:start:step_upload_script[0K[33;1mUploading script[0m
-• waiting for ssh connectivity.......
-✓ ssh connectivity established (24.275s)
-✓ uploaded script
-travis_fold:end:step_upload_script[0K
-
-Done: Job Cancelled
-
-This job was cancelled because the "Auto Cancellation" feature is currently enabled, and a more recent build (#25) for branch master came in while this job was waiting to be processed.
-
