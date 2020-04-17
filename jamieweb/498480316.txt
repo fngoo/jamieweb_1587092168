@@ -1,0 +1,846 @@
+travis_fold:start:worker_info[0K[33;1mWorker information[0m
+hostname: f7823982-8709-4689-af5b-e5ba88a020c4@1.production-2-worker-org-gce-t840
+version: v6.2.0 https://github.com/travis-ci/worker/tree/5e5476e01646095f48eec13196fdb3faf8f5cbf7
+instance: travis-job-09ce4495-b3a7-4fa4-9ad9-199491e51359 travis-ci-garnet-trusty-1512502259-986baf0 (via amqp)
+startup: 6.507862734s
+travis_fold:end:worker_info[0Ktravis_fold:start:system_info[0K[33;1mBuild system information[0m
+Build language: php
+Build group: stable
+Build dist: trusty
+Build id: 498480315
+Job id: 498480316
+Runtime kernel version: 4.4.0-101-generic
+travis-build version: f47f1c515
+[34m[1mBuild image provisioning date and time[0m
+Tue Dec  5 19:58:13 UTC 2017
+[34m[1mOperating System Details[0m
+Distributor ID:	Ubuntu
+Description:	Ubuntu 14.04.5 LTS
+Release:	14.04
+Codename:	trusty
+[34m[1mCookbooks Version[0m
+7c2c6a6 https://github.com/travis-ci/travis-cookbooks/tree/7c2c6a6
+[34m[1mgit version[0m
+git version 2.15.1
+[34m[1mbash version[0m
+GNU bash, version 4.3.11(1)-release (x86_64-pc-linux-gnu)
+[34m[1mgcc version[0m
+gcc (Ubuntu 4.8.4-2ubuntu1~14.04.3) 4.8.4
+Copyright (C) 2013 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+[34m[1mdocker version[0m
+Client:
+ Version:      17.09.0-ce
+ API version:  1.32
+ Go version:   go1.8.3
+ Git commit:   afdb6d4
+ Built:        Tue Sep 26 22:42:38 2017
+ OS/Arch:      linux/amd64
+
+Server:
+ Version:      17.09.0-ce
+ API version:  1.32 (minimum version 1.12)
+ Go version:   go1.8.3
+ Git commit:   afdb6d4
+ Built:        Tue Sep 26 22:41:20 2017
+ OS/Arch:      linux/amd64
+ Experimental: false
+[34m[1mclang version[0m
+clang version 5.0.0 (tags/RELEASE_500/final)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /usr/local/clang-5.0.0/bin
+[34m[1mjq version[0m
+jq-1.5
+[34m[1mbats version[0m
+Bats 0.4.0
+[34m[1mshellcheck version[0m
+0.4.6
+[34m[1mshfmt version[0m
+v2.0.0
+[34m[1mccache version[0m
+ccache version 3.1.9
+
+Copyright (C) 2002-2007 Andrew Tridgell
+Copyright (C) 2009-2011 Joel Rosdahl
+
+This program is free software; you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation; either version 3 of the License, or (at your option) any later
+version.
+[34m[1mcmake version[0m
+cmake version 3.9.2
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+[34m[1mheroku version[0m
+heroku-cli/6.14.39-addc925 (linux-x64) node-v9.2.0
+[34m[1mimagemagick version[0m
+Version: ImageMagick 6.7.7-10 2017-07-31 Q16 http://www.imagemagick.org
+[34m[1mmd5deep version[0m
+4.2
+[34m[1mmercurial version[0m
+Mercurial Distributed SCM (version 4.2.2)
+(see https://mercurial-scm.org for more information)
+
+Copyright (C) 2005-2017 Matt Mackall and others
+This is free software; see the source for copying conditions. There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+[34m[1mmysql version[0m
+mysql  Ver 14.14 Distrib 5.6.33, for debian-linux-gnu (x86_64) using  EditLine wrapper
+[34m[1mopenssl version[0m
+OpenSSL 1.0.1f 6 Jan 2014
+[34m[1mpacker version[0m
+Packer v1.0.2
+
+Your version of Packer is out of date! The latest version
+is 1.1.2. You can update by downloading from www.packer.io
+[34m[1mpostgresql client version[0m
+psql (PostgreSQL) 9.6.6
+[34m[1mragel version[0m
+Ragel State Machine Compiler version 6.8 Feb 2013
+Copyright (c) 2001-2009 by Adrian Thurston
+[34m[1msubversion version[0m
+svn, version 1.8.8 (r1568071)
+   compiled Aug 10 2017, 17:20:39 on x86_64-pc-linux-gnu
+
+Copyright (C) 2013 The Apache Software Foundation.
+This software consists of contributions made by many people;
+see the NOTICE file for more information.
+Subversion is open source software, see http://subversion.apache.org/
+
+The following repository access (RA) modules are available:
+
+* ra_svn : Module for accessing a repository using the svn network protocol.
+  - with Cyrus SASL authentication
+  - handles 'svn' scheme
+* ra_local : Module for accessing a repository on local disk.
+  - handles 'file' scheme
+* ra_serf : Module for accessing a repository via WebDAV protocol using serf.
+  - using serf 1.3.3
+  - handles 'http' scheme
+  - handles 'https' scheme
+
+[34m[1msudo version[0m
+Sudo version 1.8.9p5
+Configure options: --prefix=/usr -v --with-all-insults --with-pam --with-fqdn --with-logging=syslog --with-logfac=authpriv --with-env-editor --with-editor=/usr/bin/editor --with-timeout=15 --with-password-timeout=0 --with-passprompt=[sudo] password for %p:  --without-lecture --with-tty-tickets --disable-root-mailer --enable-admin-flag --with-sendmail=/usr/sbin/sendmail --with-timedir=/var/lib/sudo --mandir=/usr/share/man --libexecdir=/usr/lib/sudo --with-sssd --with-sssd-lib=/usr/lib/x86_64-linux-gnu --with-selinux
+Sudoers policy plugin version 1.8.9p5
+Sudoers file grammar version 43
+
+Sudoers path: /etc/sudoers
+Authentication methods: 'pam'
+Syslog facility if syslog is being used for logging: authpriv
+Syslog priority to use when user authenticates successfully: notice
+Syslog priority to use when user authenticates unsuccessfully: alert
+Send mail if the user is not in sudoers
+Use a separate timestamp for each user/tty combo
+Lecture user the first time they run sudo
+Root may run sudo
+Allow some information gathering to give useful error messages
+Require fully-qualified hostnames in the sudoers file
+Visudo will honor the EDITOR environment variable
+Set the LOGNAME and USER environment variables
+Length at which to wrap log file lines (0 for no wrap): 80
+Authentication timestamp timeout: 15.0 minutes
+Password prompt timeout: 0.0 minutes
+Number of tries to enter a password: 3
+Umask to use or 0777 to use user's: 022
+Path to mail program: /usr/sbin/sendmail
+Flags for mail program: -t
+Address to send mail to: root
+Subject line for mail messages: *** SECURITY information for %h ***
+Incorrect password message: Sorry, try again.
+Path to authentication timestamp dir: /var/lib/sudo
+Default password prompt: [sudo] password for %p: 
+Default user to run commands as: root
+Value to override user's $PATH with: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+Path to the editor for use by visudo: /usr/bin/editor
+When to require a password for 'list' pseudocommand: any
+When to require a password for 'verify' pseudocommand: all
+File descriptors >= 3 will be closed before executing a command
+Environment variables to check for sanity:
+	TZ
+	TERM
+	LINGUAS
+	LC_*
+	LANGUAGE
+	LANG
+	COLORTERM
+Environment variables to remove:
+	RUBYOPT
+	RUBYLIB
+	PYTHONUSERBASE
+	PYTHONINSPECT
+	PYTHONPATH
+	PYTHONHOME
+	TMPPREFIX
+	ZDOTDIR
+	READNULLCMD
+	NULLCMD
+	FPATH
+	PERL5DB
+	PERL5OPT
+	PERL5LIB
+	PERLLIB
+	PERLIO_DEBUG 
+	JAVA_TOOL_OPTIONS
+	SHELLOPTS
+	GLOBIGNORE
+	PS4
+	BASH_ENV
+	ENV
+	TERMCAP
+	TERMPATH
+	TERMINFO_DIRS
+	TERMINFO
+	_RLD*
+	LD_*
+	PATH_LOCALE
+	NLSPATH
+	HOSTALIASES
+	RES_OPTIONS
+	LOCALDOMAIN
+	CDPATH
+	IFS
+Environment variables to preserve:
+	JAVA_HOME
+	TRAVIS
+	CI
+	DEBIAN_FRONTEND
+	XAUTHORIZATION
+	XAUTHORITY
+	PS2
+	PS1
+	PATH
+	LS_COLORS
+	KRB5CCNAME
+	HOSTNAME
+	HOME
+	DISPLAY
+	COLORS
+Locale to use while parsing sudoers: C
+Directory in which to store input/output logs: /var/log/sudo-io
+File in which to store the input/output log: %{seq}
+Add an entry to the utmp/utmpx file when allocating a pty
+PAM service name to use
+PAM service name to use for login shells
+Create a new PAM session for the command to run in
+Maximum I/O log sequence number: 0
+
+Local IP address and netmask pairs:
+	10.240.0.28/255.255.255.255
+	172.17.0.1/255.255.0.0
+
+Sudoers I/O plugin version 1.8.9p5
+[34m[1mgzip version[0m
+gzip 1.6
+Copyright (C) 2007, 2010, 2011 Free Software Foundation, Inc.
+Copyright (C) 1993 Jean-loup Gailly.
+This is free software.  You may redistribute copies of it under the terms of
+the GNU General Public License <http://www.gnu.org/licenses/gpl.html>.
+There is NO WARRANTY, to the extent permitted by law.
+
+Written by Jean-loup Gailly.
+[34m[1mzip version[0m
+Copyright (c) 1990-2008 Info-ZIP - Type 'zip "-L"' for software license.
+This is Zip 3.0 (July 5th 2008), by Info-ZIP.
+Currently maintained by E. Gordon.  Please send bug reports to
+the authors using the web page at www.info-zip.org; see README for details.
+
+Latest sources and executables are at ftp://ftp.info-zip.org/pub/infozip,
+as of above date; see http://www.info-zip.org/ for other sites.
+
+Compiled with gcc 4.8.2 for Unix (Linux ELF) on Oct 21 2013.
+
+Zip special compilation options:
+	USE_EF_UT_TIME       (store Universal Time)
+	BZIP2_SUPPORT        (bzip2 library version 1.0.6, 6-Sept-2010)
+	    bzip2 code and library copyright (c) Julian R Seward
+	    (See the bzip2 license for terms of use)
+	SYMLINK_SUPPORT      (symbolic links supported)
+	LARGE_FILE_SUPPORT   (can read and write large files on file system)
+	ZIP64_SUPPORT        (use Zip64 to store large files in archives)
+	UNICODE_SUPPORT      (store and read UTF-8 Unicode paths)
+	STORE_UNIX_UIDs_GIDs (store UID/GID sizes/values using new extra field)
+	UIDGID_NOT_16BIT     (old Unix 16-bit UID/GID extra field not used)
+	[encryption, version 2.91 of 05 Jan 2007] (modified for Zip 3)
+
+Encryption notice:
+	The encryption code of this program is not copyrighted and is
+	put in the public domain.  It was originally written in Europe
+	and, to the best of our knowledge, can be freely distributed
+	in both source and object forms from any country, including
+	the USA under License Exception TSU of the U.S. Export
+	Administration Regulations (section 740.13(e)) of 6 June 2002.
+
+Zip environment options:
+             ZIP:  [none]
+          ZIPOPT:  [none]
+[34m[1mvim version[0m
+VIM - Vi IMproved 7.4 (2013 Aug 10, compiled Nov 24 2016 16:43:18)
+Included patches: 1-52
+Extra patches: 8.0.0056
+Modified by pkg-vim-maintainers@lists.alioth.debian.org
+Compiled by buildd@
+Huge version without GUI.  Features included (+) or not (-):
++acl             +farsi           +mouse_netterm   +syntax
++arabic          +file_in_path    +mouse_sgr       +tag_binary
++autocmd         +find_in_path    -mouse_sysmouse  +tag_old_static
+-balloon_eval    +float           +mouse_urxvt     -tag_any_white
+-browse          +folding         +mouse_xterm     -tcl
+++builtin_terms  -footer          +multi_byte      +terminfo
++byte_offset     +fork()          +multi_lang      +termresponse
++cindent         +gettext         -mzscheme        +textobjects
+-clientserver    -hangul_input    +netbeans_intg   +title
+-clipboard       +iconv           +path_extra      -toolbar
++cmdline_compl   +insert_expand   -perl            +user_commands
++cmdline_hist    +jumplist        +persistent_undo +vertsplit
++cmdline_info    +keymap          +postscript      +virtualedit
++comments        +langmap         +printer         +visual
++conceal         +libcall         +profile         +visualextra
++cryptv          +linebreak       +python          +viminfo
++cscope          +lispindent      -python3         +vreplace
++cursorbind      +listcmds        +quickfix        +wildignore
++cursorshape     +localmap        +reltime         +wildmenu
++dialog_con      -lua             +rightleft       +windows
++diff            +menu            -ruby            +writebackup
++digraphs        +mksession       +scrollbind      -X11
+-dnd             +modify_fname    +signs           -xfontset
+-ebcdic          +mouse           +smartindent     -xim
++emacs_tags      -mouseshape      -sniff           -xsmp
++eval            +mouse_dec       +startuptime     -xterm_clipboard
++ex_extra        +mouse_gpm       +statusline      -xterm_save
++extra_search    -mouse_jsbterm   -sun_workshop    -xpm
+   system vimrc file: "$VIM/vimrc"
+     user vimrc file: "$HOME/.vimrc"
+ 2nd user vimrc file: "~/.vim/vimrc"
+      user exrc file: "$HOME/.exrc"
+  fall-back for $VIM: "/usr/share/vim"
+Compilation: gcc -c -I. -Iproto -DHAVE_CONFIG_H     -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1      
+Linking: gcc   -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,--as-needed -o vim        -lm -ltinfo -lnsl  -lselinux  -lacl -lattr -lgpm -ldl    -L/usr/lib/python2.7/config-x86_64-linux-gnu -lpython2.7 -lpthread -ldl -lutil -lm -Xlinker -export-dynamic -Wl,-O1 -Wl,-Bsymbolic-functions      
+[34m[1miptables version[0m
+iptables v1.4.21
+[34m[1mcurl version[0m
+curl 7.35.0 (x86_64-pc-linux-gnu) libcurl/7.35.0 OpenSSL/1.0.1f zlib/1.2.8 libidn/1.28 librtmp/2.3
+[34m[1mwget version[0m
+GNU Wget 1.15 built on linux-gnu.
+[34m[1mrsync version[0m
+rsync  version 3.1.0  protocol version 31
+[34m[1mgimme version[0m
+v1.2.0
+[34m[1mnvm version[0m
+0.33.6
+[34m[1mperlbrew version[0m
+/home/travis/perl5/perlbrew/bin/perlbrew  - App::perlbrew/0.80
+[34m[1mphpenv version[0m
+rbenv 1.1.1-25-g6aa70b6
+[34m[1mrvm version[0m
+rvm 1.29.3 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+[34m[1mdefault ruby version[0m
+ruby 2.4.1p111 (2017-03-22 revision 58053) [x86_64-linux]
+[34m[1mCouchDB version[0m
+couchdb 1.6.1
+[34m[1mElasticSearch version[0m
+5.5.0
+[34m[1mInstalled Firefox version[0m
+firefox 56.0.2
+[34m[1mMongoDB version[0m
+MongoDB 3.4.10
+[34m[1mPhantomJS version[0m
+2.1.1
+[34m[1mPre-installed PostgreSQL versions[0m
+9.2.24
+9.3.20
+9.4.15
+9.5.10
+9.6.6
+[34m[1mRabbitMQ Version[0m
+3.6.14
+[34m[1mRedis version[0m
+redis-server 4.0.6
+[34m[1mriak version[0m
+2.2.3
+[34m[1mPre-installed Go versions[0m
+1.7.4
+[34m[1mant version[0m
+Apache Ant(TM) version 1.9.3 compiled on April 8 2014
+[34m[1mmvn version[0m
+Apache Maven 3.5.2 (138edd61fd100ec658bfa2d307c43b76940a5d7d; 2017-10-18T07:58:13Z)
+Maven home: /usr/local/maven-3.5.2
+Java version: 1.8.0_151, vendor: Oracle Corporation
+Java home: /usr/lib/jvm/java-8-oracle/jre
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "4.4.0-98-generic", arch: "amd64", family: "unix"
+[34m[1mgradle version[0m
+
+------------------------------------------------------------
+Gradle 4.0.1
+------------------------------------------------------------
+
+Build time:   2017-07-07 14:02:41 UTC
+Revision:     38e5dc0f772daecca1d2681885d3d85414eb6826
+
+Groovy:       2.4.11
+Ant:          Apache Ant(TM) version 1.9.6 compiled on June 29 2015
+JVM:          1.8.0_151 (Oracle Corporation 25.151-b12)
+OS:           Linux 4.4.0-98-generic amd64
+
+[34m[1mlein version[0m
+Leiningen 2.8.1 on Java 1.8.0_151 Java HotSpot(TM) 64-Bit Server VM
+[34m[1mPre-installed Node.js versions[0m
+v4.8.6
+v6.12.0
+v6.12.1
+v8.9
+v8.9.1
+[34m[1mphpenv versions[0m
+  system
+  5.6
+* 5.6.32 (set by /home/travis/.phpenv/version)
+  7.0
+  7.0.25
+  7.1
+  7.1.11
+  hhvm
+  hhvm-stable
+[34m[1mcomposer --version[0m
+Composer version 1.5.2 2017-09-11 16:59:25
+[34m[1mPre-installed Ruby versions[0m
+ruby-2.2.7
+ruby-2.3.4
+ruby-2.4.1
+travis_fold:end:system_info[0K
+
+travis_fold:start:git.checkout[0Ktravis_time:start:01536780[0K$ git clone --depth=50 --branch=master https://github.com/jamieweb/jamieweb.git jamieweb/jamieweb
+Cloning into 'jamieweb/jamieweb'...
+remote: Enumerating objects: 1871, done.[K
+remote: Counting objects:   0% (1/1871)   [Kremote: Counting objects:   1% (19/1871)   [Kremote: Counting objects:   2% (38/1871)   [Kremote: Counting objects:   3% (57/1871)   [Kremote: Counting objects:   4% (75/1871)   [Kremote: Counting objects:   5% (94/1871)   [Kremote: Counting objects:   6% (113/1871)   [Kremote: Counting objects:   7% (131/1871)   [Kremote: Counting objects:   8% (150/1871)   [Kremote: Counting objects:   9% (169/1871)   [Kremote: Counting objects:  10% (188/1871)   [Kremote: Counting objects:  11% (206/1871)   [Kremote: Counting objects:  12% (225/1871)   [Kremote: Counting objects:  13% (244/1871)   [Kremote: Counting objects:  14% (262/1871)   [Kremote: Counting objects:  15% (281/1871)   [Kremote: Counting objects:  16% (300/1871)   [Kremote: Counting objects:  17% (319/1871)   [Kremote: Counting objects:  18% (337/1871)   [Kremote: Counting objects:  19% (356/1871)   [Kremote: Counting objects:  20% (375/1871)   [Kremote: Counting objects:  21% (393/1871)   [Kremote: Counting objects:  22% (412/1871)   [Kremote: Counting objects:  23% (431/1871)   [Kremote: Counting objects:  24% (450/1871)   [Kremote: Counting objects:  25% (468/1871)   [Kremote: Counting objects:  26% (487/1871)   [Kremote: Counting objects:  27% (506/1871)   [Kremote: Counting objects:  28% (524/1871)   [Kremote: Counting objects:  29% (543/1871)   [Kremote: Counting objects:  30% (562/1871)   [Kremote: Counting objects:  31% (581/1871)   [Kremote: Counting objects:  32% (599/1871)   [Kremote: Counting objects:  33% (618/1871)   [Kremote: Counting objects:  34% (637/1871)   [Kremote: Counting objects:  35% (655/1871)   [Kremote: Counting objects:  36% (674/1871)   [Kremote: Counting objects:  37% (693/1871)   [Kremote: Counting objects:  38% (711/1871)   [Kremote: Counting objects:  39% (730/1871)   [Kremote: Counting objects:  40% (749/1871)   [Kremote: Counting objects:  41% (768/1871)   [Kremote: Counting objects:  42% (786/1871)   [Kremote: Counting objects:  43% (805/1871)   [Kremote: Counting objects:  44% (824/1871)   [Kremote: Counting objects:  45% (842/1871)   [Kremote: Counting objects:  46% (861/1871)   [Kremote: Counting objects:  47% (880/1871)   [Kremote: Counting objects:  48% (899/1871)   [Kremote: Counting objects:  49% (917/1871)   [Kremote: Counting objects:  50% (936/1871)   [Kremote: Counting objects:  51% (955/1871)   [Kremote: Counting objects:  52% (973/1871)   [Kremote: Counting objects:  53% (992/1871)   [Kremote: Counting objects:  54% (1011/1871)   [Kremote: Counting objects:  55% (1030/1871)   [Kremote: Counting objects:  56% (1048/1871)   [Kremote: Counting objects:  57% (1067/1871)   [Kremote: Counting objects:  58% (1086/1871)   [Kremote: Counting objects:  59% (1104/1871)   [Kremote: Counting objects:  60% (1123/1871)   [Kremote: Counting objects:  61% (1142/1871)   [Kremote: Counting objects:  62% (1161/1871)   [Kremote: Counting objects:  63% (1179/1871)   [Kremote: Counting objects:  64% (1198/1871)   [Kremote: Counting objects:  65% (1217/1871)   [Kremote: Counting objects:  66% (1235/1871)   [Kremote: Counting objects:  67% (1254/1871)   [Kremote: Counting objects:  68% (1273/1871)   [Kremote: Counting objects:  69% (1291/1871)   [Kremote: Counting objects:  70% (1310/1871)   [Kremote: Counting objects:  71% (1329/1871)   [Kremote: Counting objects:  72% (1348/1871)   [Kremote: Counting objects:  73% (1366/1871)   [Kremote: Counting objects:  74% (1385/1871)   [Kremote: Counting objects:  75% (1404/1871)   [Kremote: Counting objects:  76% (1422/1871)   [Kremote: Counting objects:  77% (1441/1871)   [Kremote: Counting objects:  78% (1460/1871)   [Kremote: Counting objects:  79% (1479/1871)   [Kremote: Counting objects:  80% (1497/1871)   [Kremote: Counting objects:  81% (1516/1871)   [Kremote: Counting objects:  82% (1535/1871)   [Kremote: Counting objects:  83% (1553/1871)   [Kremote: Counting objects:  84% (1572/1871)   [Kremote: Counting objects:  85% (1591/1871)   [Kremote: Counting objects:  86% (1610/1871)   [Kremote: Counting objects:  87% (1628/1871)   [Kremote: Counting objects:  88% (1647/1871)   [Kremote: Counting objects:  89% (1666/1871)   [Kremote: Counting objects:  90% (1684/1871)   [Kremote: Counting objects:  91% (1703/1871)   [Kremote: Counting objects:  92% (1722/1871)   [Kremote: Counting objects:  93% (1741/1871)   [Kremote: Counting objects:  94% (1759/1871)   [Kremote: Counting objects:  95% (1778/1871)   [Kremote: Counting objects:  96% (1797/1871)   [Kremote: Counting objects:  97% (1815/1871)   [Kremote: Counting objects:  98% (1834/1871)   [Kremote: Counting objects:  99% (1853/1871)   [Kremote: Counting objects: 100% (1871/1871)   [Kremote: Counting objects: 100% (1871/1871), done.[K
+remote: Compressing objects:   0% (1/827)   [Kremote: Compressing objects:   1% (9/827)   [Kremote: Compressing objects:   2% (17/827)   [Kremote: Compressing objects:   3% (25/827)   [Kremote: Compressing objects:   4% (34/827)   [Kremote: Compressing objects:   5% (42/827)   [Kremote: Compressing objects:   6% (50/827)   [Kremote: Compressing objects:   7% (58/827)   [Kremote: Compressing objects:   8% (67/827)   [Kremote: Compressing objects:   9% (75/827)   [Kremote: Compressing objects:  10% (83/827)   [Kremote: Compressing objects:  11% (91/827)   [Kremote: Compressing objects:  12% (100/827)   [Kremote: Compressing objects:  13% (108/827)   [Kremote: Compressing objects:  14% (116/827)   [Kremote: Compressing objects:  15% (125/827)   [Kremote: Compressing objects:  16% (133/827)   [Kremote: Compressing objects:  17% (141/827)   [Kremote: Compressing objects:  18% (149/827)   [Kremote: Compressing objects:  19% (158/827)   [Kremote: Compressing objects:  20% (166/827)   [Kremote: Compressing objects:  21% (174/827)   [Kremote: Compressing objects:  22% (182/827)   [Kremote: Compressing objects:  23% (191/827)   [Kremote: Compressing objects:  24% (199/827)   [Kremote: Compressing objects:  25% (207/827)   [Kremote: Compressing objects:  26% (216/827)   [Kremote: Compressing objects:  27% (224/827)   [Kremote: Compressing objects:  28% (232/827)   [Kremote: Compressing objects:  29% (240/827)   [Kremote: Compressing objects:  30% (249/827)   [Kremote: Compressing objects:  31% (257/827)   [Kremote: Compressing objects:  32% (265/827)   [Kremote: Compressing objects:  33% (273/827)   [Kremote: Compressing objects:  34% (282/827)   [Kremote: Compressing objects:  35% (290/827)   [Kremote: Compressing objects:  36% (298/827)   [Kremote: Compressing objects:  37% (306/827)   [Kremote: Compressing objects:  38% (315/827)   [Kremote: Compressing objects:  39% (323/827)   [Kremote: Compressing objects:  40% (331/827)   [Kremote: Compressing objects:  41% (340/827)   [Kremote: Compressing objects:  42% (348/827)   [Kremote: Compressing objects:  43% (356/827)   [Kremote: Compressing objects:  44% (364/827)   [Kremote: Compressing objects:  45% (373/827)   [Kremote: Compressing objects:  46% (381/827)   [Kremote: Compressing objects:  47% (389/827)   [Kremote: Compressing objects:  48% (397/827)   [Kremote: Compressing objects:  49% (406/827)   [Kremote: Compressing objects:  50% (414/827)   [Kremote: Compressing objects:  51% (422/827)   [Kremote: Compressing objects:  52% (431/827)   [Kremote: Compressing objects:  53% (439/827)   [Kremote: Compressing objects:  54% (447/827)   [Kremote: Compressing objects:  55% (455/827)   [Kremote: Compressing objects:  56% (464/827)   [Kremote: Compressing objects:  57% (472/827)   [Kremote: Compressing objects:  58% (480/827)   [Kremote: Compressing objects:  59% (488/827)   [Kremote: Compressing objects:  60% (497/827)   [Kremote: Compressing objects:  61% (505/827)   [Kremote: Compressing objects:  62% (513/827)   [Kremote: Compressing objects:  63% (522/827)   [Kremote: Compressing objects:  64% (530/827)   [Kremote: Compressing objects:  65% (538/827)   [Kremote: Compressing objects:  66% (546/827)   [Kremote: Compressing objects:  67% (555/827)   [Kremote: Compressing objects:  68% (563/827)   [Kremote: Compressing objects:  69% (571/827)   [Kremote: Compressing objects:  70% (579/827)   [Kremote: Compressing objects:  71% (588/827)   [Kremote: Compressing objects:  72% (596/827)   [Kremote: Compressing objects:  73% (604/827)   [Kremote: Compressing objects:  74% (612/827)   [Kremote: Compressing objects:  75% (621/827)   [Kremote: Compressing objects:  76% (629/827)   [Kremote: Compressing objects:  77% (637/827)   [Kremote: Compressing objects:  78% (646/827)   [Kremote: Compressing objects:  79% (654/827)   [Kremote: Compressing objects:  80% (662/827)   [Kremote: Compressing objects:  81% (670/827)   [Kremote: Compressing objects:  82% (679/827)   [Kremote: Compressing objects:  83% (687/827)   [Kremote: Compressing objects:  84% (695/827)   [Kremote: Compressing objects:  85% (703/827)   [Kremote: Compressing objects:  86% (712/827)   [Kremote: Compressing objects:  87% (720/827)   [Kremote: Compressing objects:  88% (728/827)   [Kremote: Compressing objects:  89% (737/827)   [Kremote: Compressing objects:  90% (745/827)   [Kremote: Compressing objects:  91% (753/827)   [Kremote: Compressing objects:  92% (761/827)   [Kremote: Compressing objects:  93% (770/827)   [Kremote: Compressing objects:  94% (778/827)   [Kremote: Compressing objects:  95% (786/827)   [Kremote: Compressing objects:  96% (794/827)   [Kremote: Compressing objects:  97% (803/827)   [Kremote: Compressing objects:  98% (811/827)   [Kremote: Compressing objects:  99% (819/827)   [Kremote: Compressing objects: 100% (827/827)   [Kremote: Compressing objects: 100% (827/827), done.[K
+Receiving objects:   0% (1/1871)   Receiving objects:   1% (19/1871)   Receiving objects:   2% (38/1871)   Receiving objects:   3% (57/1871)   Receiving objects:   4% (75/1871)   Receiving objects:   5% (94/1871)   Receiving objects:   6% (113/1871)   Receiving objects:   7% (131/1871)   Receiving objects:   8% (150/1871)   Receiving objects:   9% (169/1871)   Receiving objects:  10% (188/1871)   Receiving objects:  11% (206/1871)   Receiving objects:  12% (225/1871)   Receiving objects:  13% (244/1871)   Receiving objects:  14% (262/1871)   Receiving objects:  15% (281/1871)   Receiving objects:  16% (300/1871)   Receiving objects:  17% (319/1871)   Receiving objects:  18% (337/1871)   Receiving objects:  19% (356/1871)   Receiving objects:  20% (375/1871)   Receiving objects:  21% (393/1871)   Receiving objects:  22% (412/1871)   Receiving objects:  23% (431/1871)   Receiving objects:  24% (450/1871)   Receiving objects:  25% (468/1871)   Receiving objects:  26% (487/1871)   Receiving objects:  27% (506/1871)   Receiving objects:  28% (524/1871)   Receiving objects:  29% (543/1871)   Receiving objects:  30% (562/1871)   Receiving objects:  31% (581/1871)   Receiving objects:  32% (599/1871)   Receiving objects:  33% (618/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects:  34% (637/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects:  35% (655/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects:  36% (674/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects:  37% (693/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects:  38% (711/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects:  39% (730/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects:  40% (749/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects:  41% (768/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects:  42% (786/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects:  43% (805/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects:  44% (824/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects:  45% (842/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects:  46% (861/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects:  47% (880/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects:  48% (899/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects:  49% (917/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects:  50% (936/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects:  51% (955/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects:  52% (973/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects:  53% (992/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects:  54% (1011/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects:  55% (1030/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects:  56% (1048/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects:  57% (1067/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects:  58% (1086/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects:  59% (1104/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects:  60% (1123/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects:  61% (1142/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects:  62% (1161/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects:  63% (1179/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects:  64% (1198/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects:  65% (1217/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects:  66% (1235/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects:  67% (1254/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects:  68% (1273/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects:  69% (1291/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects:  70% (1310/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects:  71% (1329/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects:  72% (1348/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects:  73% (1366/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects:  74% (1385/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects:  75% (1404/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects:  76% (1422/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects:  77% (1441/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects:  78% (1460/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects:  79% (1479/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects:  80% (1497/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects:  81% (1516/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects:  82% (1535/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects:  83% (1553/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects:  84% (1572/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects:  85% (1591/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects:  86% (1610/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects:  87% (1628/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects:  88% (1647/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects:  89% (1666/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects:  90% (1684/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects:  91% (1703/1871), 17.47 MiB | 34.94 MiB/s   remote: Total 1871 (delta 988), reused 1698 (delta 864), pack-reused 0[K
+Receiving objects:  92% (1722/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects:  93% (1741/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects:  94% (1759/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects:  95% (1778/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects:  96% (1797/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects:  97% (1815/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects:  98% (1834/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects:  99% (1853/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects: 100% (1871/1871), 17.47 MiB | 34.94 MiB/s   Receiving objects: 100% (1871/1871), 20.40 MiB | 35.47 MiB/s, done.
+Resolving deltas:   0% (0/988)   Resolving deltas:  12% (123/988)   Resolving deltas:  15% (156/988)   Resolving deltas:  16% (161/988)   Resolving deltas:  17% (177/988)   Resolving deltas:  18% (182/988)   Resolving deltas:  19% (192/988)   Resolving deltas:  20% (202/988)   Resolving deltas:  21% (212/988)   Resolving deltas:  22% (224/988)   Resolving deltas:  23% (231/988)   Resolving deltas:  24% (239/988)   Resolving deltas:  25% (247/988)   Resolving deltas:  26% (260/988)   Resolving deltas:  27% (267/988)   Resolving deltas:  28% (277/988)   Resolving deltas:  29% (288/988)   Resolving deltas:  30% (297/988)   Resolving deltas:  31% (309/988)   Resolving deltas:  34% (336/988)   Resolving deltas:  35% (355/988)   Resolving deltas:  36% (356/988)   Resolving deltas:  37% (366/988)   Resolving deltas:  39% (392/988)   Resolving deltas:  40% (396/988)   Resolving deltas:  41% (406/988)   Resolving deltas:  42% (416/988)   Resolving deltas:  43% (425/988)   Resolving deltas:  44% (438/988)   Resolving deltas:  45% (448/988)   Resolving deltas:  46% (457/988)   Resolving deltas:  47% (467/988)   Resolving deltas:  48% (477/988)   Resolving deltas:  49% (486/988)   Resolving deltas:  52% (519/988)   Resolving deltas:  53% (524/988)   Resolving deltas:  54% (537/988)   Resolving deltas:  55% (546/988)   Resolving deltas:  56% (559/988)   Resolving deltas:  57% (564/988)   Resolving deltas:  58% (577/988)   Resolving deltas:  59% (588/988)   Resolving deltas:  60% (601/988)   Resolving deltas:  61% (607/988)   Resolving deltas:  62% (621/988)   Resolving deltas:  63% (623/988)   Resolving deltas:  64% (639/988)   Resolving deltas:  65% (643/988)   Resolving deltas:  67% (665/988)   Resolving deltas:  70% (693/988)   Resolving deltas:  71% (703/988)   Resolving deltas:  72% (713/988)   Resolving deltas:  73% (722/988)   Resolving deltas:  81% (809/988)   Resolving deltas:  92% (909/988)   Resolving deltas:  93% (921/988)   Resolving deltas:  96% (951/988)   Resolving deltas:  97% (959/988)   Resolving deltas: 100% (988/988)   Resolving deltas: 100% (988/988), done.
+travis_time:end:01536780:start=1551141965787107093,finish=1551141967768578210,duration=1981471117[0K$ cd jamieweb/jamieweb
+$ git checkout -qf 959ab1605dc7746c71964e72bbded787bad578bb
+travis_fold:end:git.checkout[0K
+travis_time:start:12e248bc[0K$ phpenv global 7.2 2>/dev/null
+travis_time:end:12e248bc:start=1551141967896524762,finish=1551141967917111632,duration=20586870[0K[33;1m7.2 is not pre-installed; installing[0m
+[33;1mDownloading archive: https://travis-ci-php-archives.global.ssl.fastly.net/binaries/ubuntu/14.04/x86_64/php-7.2.tar.bz2[0m
+travis_time:start:162cd840[0K$ curl -s -o archive.tar.bz2 $archive_url && tar xjf archive.tar.bz2 --directory /
+travis_time:end:162cd840:start=1551141968000178133,finish=1551141978346544929,duration=10346366796[0Ktravis_time:start:0b2491c0[0Ktravis_time:end:0b2491c0:start=1551141978350554773,finish=1551141978364877271,duration=14322498[0Ktravis_time:start:0a1b2420[0K$ phpenv global 7.2
+travis_time:end:0a1b2420:start=1551141978368667933,finish=1551141978385121912,duration=16453979[0Ktravis_time:start:3569c997[0K$ composer self-update
+[32mYou are already using composer version 1.8.4 (stable channel).[39m
+travis_time:end:3569c997:start=1551141978613139801,finish=1551141978936693952,duration=323554151[0K$ php --version
+PHP 7.2.15 (cli) (built: Feb 12 2019 01:24:05) ( ZTS )
+Copyright (c) 1997-2018 The PHP Group
+Zend Engine v3.2.0, Copyright (c) 1998-2018 Zend Technologies
+    with Zend OPcache v7.2.15, Copyright (c) 1999-2018, by Zend Technologies
+    with Xdebug v2.6.1, Copyright (c) 2002-2018, by Derick Rethans
+$ composer --version
+[32mComposer[39m version [33m1.8.4[39m 2019-02-11 10:52:10
+[0m
+travis_fold:start:before_install.1[0Ktravis_time:start:00ae2d54[0K$ sudo apt update
+[33m0% [Working][0m            Get:1 http://dl.hhvm.com/ubuntu trusty InRelease [3,106 B]
+            Get:3 http://ppa.launchpad.net/chris-lea/redis-server/ubuntu trusty InRelease [15.4 kB]
+            Get:5 http://apt.postgresql.org/pub/repos/apt trusty-pgdg InRelease [61.4 kB]
+[33m0% [Waiting for headers] [Waiting for headers] [Waiting for headers] [Waiting f[0m                                                                               Get:6 http://security.ubuntu.com/ubuntu trusty-security InRelease [65.9 kB]
+[33m0% [Waiting for headers] [Waiting for headers] [Waiting for headers] [Waiting f[0m[33m0% [Connecting to build-cache.travisci.net (10.80.1.2)] [Connecting to build-ca[0m                                                                               Hit:2 http://dl.bintray.com/apache/cassandra 39x InRelease
+[33m0% [Waiting for headers] [1 InRelease gpgv 3,106 B] [Waiting for headers] [Wait[0m                                                                               Ign:7 http://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.4 InRelease
+[33m0% [Waiting for headers] [1 InRelease gpgv 3,106 B] [Waiting for headers] [Wait[0m                                                                               Get:8 http://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.4 Release [2,495 B]
+[33m0% [Waiting for headers] [1 InRelease gpgv 3,106 B] [Waiting for headers] [Wait[0m                                                                               Get:9 http://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.4 Release.gpg [801 B]
+[33m0% [Waiting for headers] [1 InRelease gpgv 3,106 B] [Waiting for headers] [Wait[0m                                                                               Ign:10 http://us-east-1.ec2.archive.ubuntu.com/ubuntu trusty InRelease
+[33m0% [Waiting for headers] [1 InRelease gpgv 3,106 B] [Waiting for headers] [Wait[0m                                                                               Get:11 http://us-east-1.ec2.archive.ubuntu.com/ubuntu trusty-updates InRelease [65.9 kB]
+[33m0% [Waiting for headers] [1 InRelease gpgv 3,106 B] [11 InRelease 12.7 kB/65.9 [0m[33m0% [Waiting for headers] [1 InRelease gpgv 3,106 B] [Waiting for headers] [Wait[0m                                                                               Get:12 http://us-east-1.ec2.archive.ubuntu.com/ubuntu trusty-backports InRelease [65.9 kB]
+[33m0% [Waiting for headers] [1 InRelease gpgv 3,106 B] [12 InRelease 0 B/65.9 kB 0[0m[33m0% [Waiting for headers] [1 InRelease gpgv 3,106 B] [Waiting for headers] [Wait[0m                                                                               Get:13 http://us-east-1.ec2.archive.ubuntu.com/ubuntu trusty Release [58.5 kB]
+[33m0% [Waiting for headers] [1 InRelease gpgv 3,106 B] [13 Release 0 B/58.5 kB 0%][0m[33m0% [Waiting for headers] [1 InRelease gpgv 3,106 B] [Waiting for headers] [Wait[0m                                                                               Get:14 http://us-east-1.ec2.archive.ubuntu.com/ubuntu trusty Release.gpg [933 B]
+[33m0% [Waiting for headers] [1 InRelease gpgv 3,106 B] [Waiting for headers] [Wait[0m[33m                                                                               0% [Waiting for headers] [Waiting for headers] [Waiting for headers][0m[33m0% [Waiting for headers] [3 InRelease gpgv 15.4 kB] [Waiting for headers] [Wait[0m                                                                               Get:15 http://dl.hhvm.com/ubuntu trusty/main amd64 Packages [1,810 B]
+[33m0% [Waiting for headers] [3 InRelease gpgv 15.4 kB] [15 Packages 1,810 B/1,810 [0m[33m0% [Waiting for headers] [3 InRelease gpgv 15.4 kB] [Waiting for headers] [Wait[0m[33m0% [15 Packages store 0 B] [Waiting for headers] [3 InRelease gpgv 15.4 kB] [Wa[0m[33m0% [Waiting for headers] [3 InRelease gpgv 15.4 kB] [Waiting for headers] [Wait[0m                                                                               Ign:4 http://toolbelt.heroku.com/ubuntu ./ InRelease
+[33m                                                                               0% [3 InRelease gpgv 15.4 kB] [Waiting for headers] [Waiting for headers][0m[33m0% [3 InRelease gpgv 15.4 kB] [Waiting for headers] [Waiting for headers][0m                                                                         Hit:16 http://toolbelt.heroku.com/ubuntu ./ Release
+[33m0% [3 InRelease gpgv 15.4 kB] [Waiting for headers] [Waiting for headers][0m[33m                                                                         0% [Waiting for headers] [Waiting for headers][0m[33m0% [5 InRelease gpgv 61.4 kB] [Waiting for headers] [Waiting for headers][0m                                                                         Ign:17 http://ppa.launchpad.net/couchdb/stable/ubuntu trusty InRelease
+[33m0% [5 InRelease gpgv 61.4 kB] [Waiting for headers] [Waiting for headers][0m                                                                         Get:18 http://ppa.launchpad.net/git-core/ppa/ubuntu trusty InRelease [20.8 kB]
+[33m0% [5 InRelease gpgv 61.4 kB] [18 InRelease 20.8 kB/20.8 kB 100%] [Waiting for [0m[33m                                                                               0% [5 InRelease gpgv 61.4 kB] [Waiting for headers] [Waiting for headers][0m                                                                         Get:19 http://ppa.launchpad.net/openjdk-r/ppa/ubuntu trusty InRelease [15.4 kB]
+[33m0% [5 InRelease gpgv 61.4 kB] [Waiting for headers] [Waiting for headers][0m                                                                         Get:20 http://ppa.launchpad.net/pollinate/ppa/ubuntu trusty InRelease [15.4 kB]
+[33m0% [5 InRelease gpgv 61.4 kB] [20 InRelease 12.0 kB/15.4 kB 78%] [Waiting for h[0m[33m                                                                               0% [5 InRelease gpgv 61.4 kB] [Waiting for headers] [Waiting for headers][0m                                                                         Get:21 http://ppa.launchpad.net/webupd8team/java/ubuntu trusty InRelease [15.5 kB]
+[33m0% [5 InRelease gpgv 61.4 kB] [21 InRelease 0 B/15.5 kB 0%] [Waiting for header[0m[33m                                                                               0% [5 InRelease gpgv 61.4 kB] [Waiting for headers] [Waiting for headers][0m                                                                         Get:22 http://ppa.launchpad.net/chris-lea/redis-server/ubuntu trusty/main amd64 Packages [1,844 B]
+[33m0% [5 InRelease gpgv 61.4 kB] [Waiting for headers] [Waiting for headers][0m                                                                         Get:23 http://ppa.launchpad.net/chris-lea/redis-server/ubuntu trusty/main i386 Packages [1,844 B]
+[33m0% [5 InRelease gpgv 61.4 kB] [Waiting for headers] [Waiting for headers][0m[33m0% [5 InRelease gpgv 61.4 kB] [Waiting for headers] [Waiting for headers][0m                                                                         Get:24 http://ppa.launchpad.net/chris-lea/redis-server/ubuntu trusty/main Translation-en [990 B]
+[33m                                                                         0% [5 InRelease gpgv 61.4 kB] [Waiting for headers][0m[33m0% [5 InRelease gpgv 61.4 kB] [Waiting for headers][0m                                                   Hit:25 http://ppa.launchpad.net/couchdb/stable/ubuntu trusty Release
+[33m0% [5 InRelease gpgv 61.4 kB] [Waiting for headers][0m[33m                                                   0% [Waiting for headers][0m[33m0% [6 InRelease gpgv 65.9 kB] [Waiting for headers] [Waiting for headers][0m                                                                         Get:26 http://apt.postgresql.org/pub/repos/apt trusty-pgdg/main amd64 Packages [200 kB]
+[33m0% [6 InRelease gpgv 65.9 kB] [Waiting for headers] [26 Packages 3,614 B/200 kB[0m[33m                                                                               0% [6 InRelease gpgv 65.9 kB] [Waiting for headers][0m[33m0% [26 Packages store 0 B] [6 InRelease gpgv 65.9 kB] [Waiting for headers][0m                                                                           Get:27 https://download.docker.com/linux/ubuntu trusty InRelease [37.1 kB]
+[33m0% [26 Packages store 0 B] [6 InRelease gpgv 65.9 kB] [27 InRelease 0 B/37.1 kB[0m                                                                               Get:28 http://apt.postgresql.org/pub/repos/apt trusty-pgdg/main i386 Packages [199 kB]
+[33m0% [26 Packages store 0 B] [6 InRelease gpgv 65.9 kB] [27 InRelease 0 B/37.1 kB[0m[33m0% [26 Packages store 0 B] [6 InRelease gpgv 65.9 kB] [27 InRelease 16.4 kB/37.[0m[33m                                                                               0% [26 Packages store 0 B] [6 InRelease gpgv 65.9 kB] [Waiting for headers][0m[33m                                                                           0% [6 InRelease gpgv 65.9 kB] [Waiting for headers][0m[33m0% [28 Packages store 0 B] [6 InRelease gpgv 65.9 kB] [Waiting for headers][0m[33m                                                                           0% [6 InRelease gpgv 65.9 kB] [Waiting for headers][0m[33m                                                   0% [Waiting for headers][0m[33m0% [2 InRelease gpgv 3,168 B] [Waiting for headers] [Waiting for headers][0m                                                                         Get:29 http://security.ubuntu.com/ubuntu trusty-security/main Sources [216 kB]
+[33m                                                                         0% [2 InRelease gpgv 3,168 B] [Waiting for headers][0m[33m0% [29 Sources store 0 B] [2 InRelease gpgv 3,168 B] [Waiting for headers][0m                                                                          Get:30 http://security.ubuntu.com/ubuntu trusty-security/restricted Sources [5,050 B]
+[33m0% [29 Sources store 0 B] [2 InRelease gpgv 3,168 B] [Waiting for headers] [Wai[0m                                                                               Get:31 http://security.ubuntu.com/ubuntu trusty-security/universe Sources [125 kB]
+[33m0% [29 Sources store 0 B] [2 InRelease gpgv 3,168 B] [31 Sources 16.4 kB/125 kB[0m[33m                                                                               0% [29 Sources store 0 B] [2 InRelease gpgv 3,168 B] [Waiting for headers][0m                                                                          Get:32 http://security.ubuntu.com/ubuntu trusty-security/multiverse Sources [3,068 B]
+[33m0% [29 Sources store 0 B] [2 InRelease gpgv 3,168 B] [32 Sources 3,068 B/3,068 [0m[33m0% [29 Sources store 0 B] [2 InRelease gpgv 3,168 B] [Waiting for headers] [Wai[0m                                                                               Get:33 http://security.ubuntu.com/ubuntu trusty-security/main amd64 Packages [1,002 kB]
+[33m0% [29 Sources store 0 B] [2 InRelease gpgv 3,168 B] [33 Packages 41.1 kB/1,002[0m[33m0% [2 InRelease gpgv 3,168 B] [33 Packages 762 kB/1,002 kB 76%] [Waiting for he[0m[33m0% [30 Sources store 0 B] [2 InRelease gpgv 3,168 B] [33 Packages 762 kB/1,002 [0m[33m0% [2 InRelease gpgv 3,168 B] [33 Packages 786 kB/1,002 kB 78%] [Waiting for he[0m[33m0% [31 Sources store 0 B] [2 InRelease gpgv 3,168 B] [33 Packages 786 kB/1,002 [0m[33m                                                                               0% [31 Sources store 0 B] [2 InRelease gpgv 3,168 B] [Waiting for headers][0m                                                                          Get:34 http://security.ubuntu.com/ubuntu trusty-security/main i386 Packages [912 kB]
+[33m0% [31 Sources store 0 B] [2 InRelease gpgv 3,168 B] [34 Packages 21.9 kB/912 k[0m[33m0% [2 InRelease gpgv 3,168 B] [34 Packages 262 kB/912 kB 29%] [Waiting for head[0m[33m0% [32 Sources store 0 B] [2 InRelease gpgv 3,168 B] [34 Packages 262 kB/912 kB[0m[33m0% [2 InRelease gpgv 3,168 B] [34 Packages 262 kB/912 kB 29%] [Waiting for head[0m[33m0% [33 Packages store 0 B] [2 InRelease gpgv 3,168 B] [34 Packages 262 kB/912 k[0m                                                                               Ign:35 http://dl.google.com/linux/chrome/deb stable InRelease
+[33m0% [33 Packages store 0 B] [2 InRelease gpgv 3,168 B] [34 Packages 262 kB/912 k[0m                                                                               Get:36 http://dl.google.com/linux/chrome/deb stable Release [943 B]
+[33m0% [33 Packages store 0 B] [2 InRelease gpgv 3,168 B] [34 Packages 262 kB/912 k[0m[33m0% [33 Packages store 0 B] [2 InRelease gpgv 3,168 B] [34 Packages 262 kB/912 k[0m                                                                               Get:37 http://dl.google.com/linux/chrome/deb stable Release.gpg [819 B]
+[33m0% [33 Packages store 0 B] [2 InRelease gpgv 3,168 B] [34 Packages 262 kB/912 k[0m[33m0% [33 Packages store 0 B] [2 InRelease gpgv 3,168 B] [34 Packages 328 kB/912 k[0m[33m                                                                               0% [33 Packages store 0 B] [2 InRelease gpgv 3,168 B][0m                                                     Get:38 http://security.ubuntu.com/ubuntu trusty-security/main Translation-en [525 kB]
+[33m0% [33 Packages store 0 B] [2 InRelease gpgv 3,168 B] [38 Translation-en 26.9 k[0m[33m                                                                               0% [33 Packages store 0 B] [2 InRelease gpgv 3,168 B][0m                                                     Get:39 http://security.ubuntu.com/ubuntu trusty-security/restricted amd64 Packages [18.1 kB]
+[33m0% [33 Packages store 0 B] [2 InRelease gpgv 3,168 B] [39 Packages 18.1 kB/18.1[0m[33m                                                                               0% [33 Packages store 0 B] [2 InRelease gpgv 3,168 B][0m                                                     Get:40 http://security.ubuntu.com/ubuntu trusty-security/restricted i386 Packages [17.8 kB]
+[33m0% [33 Packages store 0 B] [2 InRelease gpgv 3,168 B] [40 Packages 7,535 B/17.8[0m[33m                                                                               0% [33 Packages store 0 B] [2 InRelease gpgv 3,168 B][0m                                                     Get:41 http://security.ubuntu.com/ubuntu trusty-security/restricted Translation-en [3,272 B]
+[33m0% [33 Packages store 0 B] [2 InRelease gpgv 3,168 B] [41 Translation-en 3,272 [0m[33m                                                                               0% [33 Packages store 0 B] [2 InRelease gpgv 3,168 B][0m                                                     Get:42 http://security.ubuntu.com/ubuntu trusty-security/universe amd64 Packages [368 kB]
+[33m0% [33 Packages store 0 B] [2 InRelease gpgv 3,168 B] [42 Packages 0 B/368 kB 0[0m[33m                                                                               0% [33 Packages store 0 B] [2 InRelease gpgv 3,168 B][0m                                                     Get:43 http://security.ubuntu.com/ubuntu trusty-security/universe i386 Packages [350 kB]
+[33m0% [33 Packages store 0 B] [2 InRelease gpgv 3,168 B] [43 Packages 10.9 kB/350 [0m[33m                                                                               0% [33 Packages store 0 B] [2 InRelease gpgv 3,168 B][0m                                                     Get:44 http://security.ubuntu.com/ubuntu trusty-security/universe Translation-en [199 kB]
+[33m0% [33 Packages store 0 B] [2 InRelease gpgv 3,168 B] [44 Translation-en 53.9 k[0m[33m                                                                               0% [33 Packages store 0 B] [2 InRelease gpgv 3,168 B][0m                                                     Get:45 http://security.ubuntu.com/ubuntu trusty-security/multiverse amd64 Packages [4,723 B]
+[33m0% [33 Packages store 0 B] [2 InRelease gpgv 3,168 B] [45 Packages 4,723 B/4,72[0m[33m                                                                               0% [33 Packages store 0 B] [2 InRelease gpgv 3,168 B] [Waiting for headers][0m                                                                           Get:46 http://security.ubuntu.com/ubuntu trusty-security/multiverse i386 Packages [4,876 B]
+[33m0% [33 Packages store 0 B] [2 InRelease gpgv 3,168 B] [46 Packages 4,876 B/4,87[0m[33m                                                                               0% [33 Packages store 0 B] [2 InRelease gpgv 3,168 B][0m                                                     Get:47 http://security.ubuntu.com/ubuntu trusty-security/multiverse Translation-en [2,426 B]
+[33m0% [33 Packages store 0 B] [2 InRelease gpgv 3,168 B] [47 Translation-en 2,426 [0m[33m                                                                               0% [33 Packages store 0 B] [2 InRelease gpgv 3,168 B][0m[33m                                                     0% [33 Packages store 0 B][0m[33m0% [33 Packages store 0 B] [9 Release.gpg gpgv 2,495 B][0m[33m                                                       0% [9 Release.gpg gpgv 2,495 B][0m[33m0% [34 Packages store 0 B] [9 Release.gpg gpgv 2,495 B][0m[33m                                                       0% [34 Packages store 0 B][0m[33m0% [34 Packages store 0 B] [11 InRelease gpgv 65.9 kB] [Waiting for headers][0m                                                                            Get:48 http://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.4/multiverse amd64 Packages [13.6 kB]
+[33m0% [34 Packages store 0 B] [11 InRelease gpgv 65.9 kB] [48 Packages 12.7 kB/13.[0m[33m                                                                               0% [34 Packages store 0 B] [11 InRelease gpgv 65.9 kB][0m[33m                                                      0% [11 InRelease gpgv 65.9 kB][0m[33m0% [38 Translation-en store 0 B] [11 InRelease gpgv 65.9 kB][0m[33m                                                            0% [38 Translation-en store 0 B][0m[33m0% [38 Translation-en store 0 B] [12 InRelease gpgv 65.9 kB] [Waiting for heade[0m                                                                               Get:49 http://us-east-1.ec2.archive.ubuntu.com/ubuntu trusty-updates/main Sources [528 kB]
+[33m0% [38 Translation-en store 0 B] [12 InRelease gpgv 65.9 kB] [49 Sources 65.5 k[0m[33m                                                                               0% [38 Translation-en store 0 B] [12 InRelease gpgv 65.9 kB][0m                                                            Get:50 http://us-east-1.ec2.archive.ubuntu.com/ubuntu trusty-updates/restricted Sources [6,449 B]
+[33m0% [38 Translation-en store 0 B] [12 InRelease gpgv 65.9 kB] [50 Sources 6,449 [0m[33m0% [38 Translation-en store 0 B] [12 InRelease gpgv 65.9 kB] [Waiting for heade[0m                                                                               Get:51 http://us-east-1.ec2.archive.ubuntu.com/ubuntu trusty-updates/universe Sources [288 kB]
+[33m0% [38 Translation-en store 0 B] [12 InRelease gpgv 65.9 kB] [51 Sources 20.5 k[0m[33m                                                                               0% [38 Translation-en store 0 B] [12 InRelease gpgv 65.9 kB][0m                                                            Get:52 http://us-east-1.ec2.archive.ubuntu.com/ubuntu trusty-updates/multiverse Sources [7,287 B]
+[33m0% [38 Translation-en store 0 B] [12 InRelease gpgv 65.9 kB] [52 Sources 7,287 [0m[33m                                                                               0% [38 Translation-en store 0 B] [12 InRelease gpgv 65.9 kB][0m                                                            Get:53 http://us-east-1.ec2.archive.ubuntu.com/ubuntu trusty-updates/main amd64 Packages [1,423 kB]
+[33m0% [38 Translation-en store 0 B] [12 InRelease gpgv 65.9 kB] [53 Packages 24.5 [0m[33m                                                                               0% [38 Translation-en store 0 B] [12 InRelease gpgv 65.9 kB][0m                                                            Get:54 http://us-east-1.ec2.archive.ubuntu.com/ubuntu trusty-updates/main i386 Packages [1,328 kB]
+[33m0% [38 Translation-en store 0 B] [12 InRelease gpgv 65.9 kB] [54 Packages 43.1 [0m[33m                                                                               0% [38 Translation-en store 0 B] [12 InRelease gpgv 65.9 kB][0m                                                            Get:55 http://us-east-1.ec2.archive.ubuntu.com/ubuntu trusty-updates/main Translation-en [682 kB]
+[33m0% [38 Translation-en store 0 B] [12 InRelease gpgv 65.9 kB] [55 Translation-en[0m[33m                                                                               0% [38 Translation-en store 0 B] [12 InRelease gpgv 65.9 kB][0m                                                            Get:56 http://us-east-1.ec2.archive.ubuntu.com/ubuntu trusty-updates/restricted amd64 Packages [21.4 kB]
+[33m0% [38 Translation-en store 0 B] [12 InRelease gpgv 65.9 kB] [56 Packages 21.4 [0m[33m                                                                               0% [38 Translation-en store 0 B] [12 InRelease gpgv 65.9 kB][0m                                                            Get:57 http://us-east-1.ec2.archive.ubuntu.com/ubuntu trusty-updates/restricted i386 Packages [21.1 kB]
+[33m0% [38 Translation-en store 0 B] [12 InRelease gpgv 65.9 kB] [57 Packages 21.1 [0m[33m                                                                               0% [38 Translation-en store 0 B] [12 InRelease gpgv 65.9 kB][0m                                                            Get:58 http://us-east-1.ec2.archive.ubuntu.com/ubuntu trusty-updates/restricted Translation-en [3,704 B]
+[33m0% [38 Translation-en store 0 B] [12 InRelease gpgv 65.9 kB] [58 Translation-en[0m[33m0% [38 Translation-en store 0 B] [12 InRelease gpgv 65.9 kB] [Waiting for heade[0m                                                                               Get:59 http://us-east-1.ec2.archive.ubuntu.com/ubuntu trusty-updates/universe amd64 Packages [661 kB]
+[33m0% [38 Translation-en store 0 B] [12 InRelease gpgv 65.9 kB] [59 Packages 0 B/6[0m[33m                                                                               0% [12 InRelease gpgv 65.9 kB] [59 Packages 318 kB/661 kB 48%][0m[33m0% [39 Packages store 0 B] [12 InRelease gpgv 65.9 kB] [59 Packages 318 kB/661 [0m[33m                                                                               0% [12 InRelease gpgv 65.9 kB] [59 Packages 476 kB/661 kB 72%][0m[33m0% [40 Packages store 0 B] [12 InRelease gpgv 65.9 kB] [59 Packages 476 kB/661 [0m[33m                                                                               0% [40 Packages store 0 B] [12 InRelease gpgv 65.9 kB][0m[33m                                                      0% [12 InRelease gpgv 65.9 kB] [Waiting for headers][0m                                                    Get:60 http://us-east-1.ec2.archive.ubuntu.com/ubuntu trusty-updates/universe i386 Packages [641 kB]
+[33m0% [12 InRelease gpgv 65.9 kB] [60 Packages 11.3 kB/641 kB 2%][0m[33m0% [41 Translation-en store 0 B] [12 InRelease gpgv 65.9 kB] [60 Packages 65.5 [0m[33m                                                                               0% [12 InRelease gpgv 65.9 kB] [60 Packages 131 kB/641 kB 20%][0m[33m0% [42 Packages store 0 B] [12 InRelease gpgv 65.9 kB] [60 Packages 131 kB/641 [0m[33m                                                                               0% [42 Packages store 0 B] [12 InRelease gpgv 65.9 kB][0m                                                      Get:61 http://us-east-1.ec2.archive.ubuntu.com/ubuntu trusty-updates/universe Translation-en [342 kB]
+[33m0% [42 Packages store 0 B] [12 InRelease gpgv 65.9 kB] [61 Translation-en 25.4 [0m[33m                                                                               0% [42 Packages store 0 B] [12 InRelease gpgv 65.9 kB] [Waiting for headers][0m[33m                                                                            0% [12 InRelease gpgv 65.9 kB] [Waiting for headers][0m[33m0% [43 Packages store 0 B] [12 InRelease gpgv 65.9 kB] [Waiting for headers][0m[33m                                                                            0% [43 Packages store 0 B] [Waiting for headers][0m[33m0% [43 Packages store 0 B] [14 Release.gpg gpgv 58.5 kB] [Waiting for headers][0m                                                                              Get:62 http://us-east-1.ec2.archive.ubuntu.com/ubuntu trusty-updates/multiverse amd64 Packages [16.0 kB]
+[33m0% [43 Packages store 0 B] [14 Release.gpg gpgv 58.5 kB] [Waiting for headers][0m                                                                              Get:63 http://us-east-1.ec2.archive.ubuntu.com/ubuntu trusty-updates/multiverse i386 Packages [16.5 kB]
+[33m0% [43 Packages store 0 B] [14 Release.gpg gpgv 58.5 kB] [Waiting for headers][0m                                                                              Get:64 http://us-east-1.ec2.archive.ubuntu.com/ubuntu trusty-updates/multiverse Translation-en [7,680 B]
+[33m0% [43 Packages store 0 B] [14 Release.gpg gpgv 58.5 kB] [64 Translation-en 7,6[0m[33m                                                                               0% [43 Packages store 0 B] [14 Release.gpg gpgv 58.5 kB] [Waiting for headers][0m                                                                              Get:65 http://us-east-1.ec2.archive.ubuntu.com/ubuntu trusty-backports/main Sources [10.4 kB]
+[33m0% [43 Packages store 0 B] [14 Release.gpg gpgv 58.5 kB] [Waiting for headers][0m                                                                              Get:66 http://us-east-1.ec2.archive.ubuntu.com/ubuntu trusty-backports/restricted Sources [40 B]
+[33m0% [43 Packages store 0 B] [14 Release.gpg gpgv 58.5 kB] [66 Sources 0 B/40 B 0[0m[33m                                                                               0% [43 Packages store 0 B] [14 Release.gpg gpgv 58.5 kB] [Waiting for headers][0m                                                                              Get:67 http://us-east-1.ec2.archive.ubuntu.com/ubuntu trusty-backports/universe Sources [41.3 kB]
+[33m0% [43 Packages store 0 B] [14 Release.gpg gpgv 58.5 kB] [67 Sources 0 B/41.3 k[0m[33m                                                                               0% [43 Packages store 0 B] [14 Release.gpg gpgv 58.5 kB] [Waiting for headers][0m                                                                              Get:68 http://us-east-1.ec2.archive.ubuntu.com/ubuntu trusty-backports/multiverse Sources [1,747 B]
+[33m0% [43 Packages store 0 B] [14 Release.gpg gpgv 58.5 kB] [68 Sources 0 B/1,747 [0m[33m                                                                               0% [43 Packages store 0 B] [14 Release.gpg gpgv 58.5 kB] [Waiting for headers][0m                                                                              Get:69 http://us-east-1.ec2.archive.ubuntu.com/ubuntu trusty-backports/main amd64 Packages [14.7 kB]
+[33m0% [43 Packages store 0 B] [14 Release.gpg gpgv 58.5 kB] [69 Packages 14.7 kB/1[0m[33m                                                                               0% [43 Packages store 0 B] [14 Release.gpg gpgv 58.5 kB][0m                                                        Get:70 http://us-east-1.ec2.archive.ubuntu.com/ubuntu trusty-backports/main i386 Packages [14.7 kB]
+[33m0% [43 Packages store 0 B] [14 Release.gpg gpgv 58.5 kB] [70 Packages 14.7 kB/1[0m[33m                                                                               0% [43 Packages store 0 B] [14 Release.gpg gpgv 58.5 kB][0m                                                        Get:71 http://us-east-1.ec2.archive.ubuntu.com/ubuntu trusty-backports/main Translation-en [7,426 B]
+[33m0% [43 Packages store 0 B] [14 Release.gpg gpgv 58.5 kB] [71 Translation-en 0 B[0m[33m                                                                               0% [43 Packages store 0 B] [14 Release.gpg gpgv 58.5 kB][0m                                                        Get:72 http://us-east-1.ec2.archive.ubuntu.com/ubuntu trusty-backports/restricted amd64 Packages [40 B]
+[33m0% [43 Packages store 0 B] [14 Release.gpg gpgv 58.5 kB] [72 Packages 0 B/40 B [0m[33m                                                                               0% [43 Packages store 0 B] [14 Release.gpg gpgv 58.5 kB][0m                                                        Get:73 http://us-east-1.ec2.archive.ubuntu.com/ubuntu trusty-backports/restricted i386 Packages [40 B]
+[33m0% [43 Packages store 0 B] [14 Release.gpg gpgv 58.5 kB] [73 Packages 0 B/40 B [0m[33m                                                                               0% [43 Packages store 0 B] [14 Release.gpg gpgv 58.5 kB][0m                                                        Get:74 http://us-east-1.ec2.archive.ubuntu.com/ubuntu trusty-backports/restricted Translation-en [40 B]
+[33m0% [43 Packages store 0 B] [14 Release.gpg gpgv 58.5 kB] [74 Translation-en 0 B[0m[33m                                                                               0% [43 Packages store 0 B] [14 Release.gpg gpgv 58.5 kB][0m                                                        Get:75 http://us-east-1.ec2.archive.ubuntu.com/ubuntu trusty-backports/universe amd64 Packages [52.5 kB]
+[33m0% [43 Packages store 0 B] [14 Release.gpg gpgv 58.5 kB] [75 Packages 0 B/52.5 [0m[33m                                                                               0% [43 Packages store 0 B] [14 Release.gpg gpgv 58.5 kB][0m                                                        Get:76 http://us-east-1.ec2.archive.ubuntu.com/ubuntu trusty-backports/universe i386 Packages [52.4 kB]
+[33m0% [43 Packages store 0 B] [14 Release.gpg gpgv 58.5 kB] [76 Packages 0 B/52.4 [0m[33m                                                                               0% [43 Packages store 0 B] [14 Release.gpg gpgv 58.5 kB][0m                                                        Get:77 http://us-east-1.ec2.archive.ubuntu.com/ubuntu trusty-backports/universe Translation-en [40.0 kB]
+[33m0% [43 Packages store 0 B] [14 Release.gpg gpgv 58.5 kB] [77 Translation-en 0 B[0m[33m                                                                               0% [43 Packages store 0 B] [14 Release.gpg gpgv 58.5 kB][0m                                                        Get:78 http://us-east-1.ec2.archive.ubuntu.com/ubuntu trusty-backports/multiverse amd64 Packages [1,392 B]
+[33m0% [43 Packages store 0 B] [14 Release.gpg gpgv 58.5 kB] [78 Packages 0 B/1,392[0m[33m                                                                               0% [43 Packages store 0 B] [14 Release.gpg gpgv 58.5 kB][0m                                                        Get:79 http://us-east-1.ec2.archive.ubuntu.com/ubuntu trusty-backports/multiverse i386 Packages [1,376 B]
+[33m0% [43 Packages store 0 B] [14 Release.gpg gpgv 58.5 kB] [79 Packages 0 B/1,376[0m[33m                                                                               0% [43 Packages store 0 B] [14 Release.gpg gpgv 58.5 kB][0m[33m                                                        0% [14 Release.gpg gpgv 58.5 kB] [Waiting for headers][0m[33m0% [44 Translation-en store 0 B] [14 Release.gpg gpgv 58.5 kB] [Waiting for hea[0m[33m                                                                               0% [14 Release.gpg gpgv 58.5 kB] [Waiting for headers][0m[33m                                                      0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [46 Packages store 0 B] [Waiting for headers][0m[33m0% [46 Packages store 0 B] [Release.gpg gpgv 1,609 B] [Waiting for headers][0m[33m                                                                           0% [Release.gpg gpgv 1,609 B] [Waiting for headers][0m[33m0% [47 Translation-en store 0 B] [Release.gpg gpgv 1,609 B] [Waiting for header[0m[33m                                                                               0% [Release.gpg gpgv 1,609 B] [Waiting for headers][0m[33m0% [48 Packages store 0 B] [Release.gpg gpgv 1,609 B] [Waiting for headers][0m                                                                           Get:80 http://us-east-1.ec2.archive.ubuntu.com/ubuntu trusty-backports/multiverse Translation-en [1,165 B]
+[33m                                                                           0% [48 Packages store 0 B] [Release.gpg gpgv 1,609 B][0m                                                     Get:81 http://us-east-1.ec2.archive.ubuntu.com/ubuntu trusty/main Sources [1,335 kB]
+[33m0% [48 Packages store 0 B] [Release.gpg gpgv 1,609 B] [81 Sources 0 B/1,335 kB [0m[33m                                                                               0% [Release.gpg gpgv 1,609 B] [81 Sources 635 kB/1,335 kB 48%][0m[33m0% [49 Sources store 0 B] [Release.gpg gpgv 1,609 B] [81 Sources 700 kB/1,335 k[0m                                                                               Get:82 https://packagecloud.io/computology/apt-backport/ubuntu trusty InRelease [23.5 kB]
+[33m0% [49 Sources store 0 B] [Release.gpg gpgv 1,609 B] [81 Sources 897 kB/1,335 k[0m[33m0% [49 Sources store 0 B] [Release.gpg gpgv 1,609 B] [81 Sources 963 kB/1,335 k[0m[33m                                                                               0% [49 Sources store 0 B] [Release.gpg gpgv 1,609 B][0m                                                    Get:83 http://us-east-1.ec2.archive.ubuntu.com/ubuntu trusty/restricted Sources [5,335 B]
+[33m0% [49 Sources store 0 B] [Release.gpg gpgv 1,609 B] [83 Sources 5,335 B/5,335 [0m[33m                                                                               0% [49 Sources store 0 B] [Release.gpg gpgv 1,609 B][0m                                                    Get:84 http://us-east-1.ec2.archive.ubuntu.com/ubuntu trusty/universe Sources [7,926 kB]
+[33m0% [49 Sources store 0 B] [Release.gpg gpgv 1,609 B] [84 Sources 22.1 kB/7,926 [0m[33m                                                                               0% [Release.gpg gpgv 1,609 B] [84 Sources 1,704 kB/7,926 kB 21%][0m[33m0% [50 Sources store 0 B] [Release.gpg gpgv 1,609 B] [84 Sources 1,769 kB/7,926[0m[33m                                                                               0% [Release.gpg gpgv 1,609 B] [84 Sources 1,835 kB/7,926 kB 23%][0m[33m0% [51 Sources store 0 B] [Release.gpg gpgv 1,609 B] [84 Sources 1,835 kB/7,926[0m[33m                                                                               0% [Release.gpg gpgv 1,609 B] [84 Sources 3,211 kB/7,926 kB 41%][0m[33m0% [52 Sources store 0 B] [Release.gpg gpgv 1,609 B] [84 Sources 3,211 kB/7,926[0m[33m                                                                               0% [Release.gpg gpgv 1,609 B] [84 Sources 3,233 kB/7,926 kB 41%][0m[33m0% [53 Packages store 0 B] [Release.gpg gpgv 1,609 B] [84 Sources 3,233 kB/7,92[0m[33m                                                                               0% [53 Packages store 0 B] [84 Sources 7,926 kB/7,926 kB 100%][0m[33m0% [53 Packages store 0 B] [18 InRelease gpgv 20.8 kB] [84 Sources 7,926 kB/7,9[0m[33m                                                                               0% [53 Packages store 0 B] [18 InRelease gpgv 20.8 kB][0m                                                      Get:86 http://us-east-1.ec2.archive.ubuntu.com/ubuntu trusty/multiverse Sources [211 kB]
+[33m0% [53 Packages store 0 B] [18 InRelease gpgv 20.8 kB] [86 Sources 0 B/211 kB 0[0m[33m                                                                               0% [53 Packages store 0 B] [18 InRelease gpgv 20.8 kB][0m                                                      Get:87 http://us-east-1.ec2.archive.ubuntu.com/ubuntu trusty/main amd64 Packages [1,743 kB]
+[33m0% [53 Packages store 0 B] [18 InRelease gpgv 20.8 kB] [87 Packages 0 B/1,743 k[0m[33m                                                                               0% [53 Packages store 0 B] [18 InRelease gpgv 20.8 kB][0m                                                      Get:88 http://us-east-1.ec2.archive.ubuntu.com/ubuntu trusty/main i386 Packages [1,739 kB]
+[33m0% [53 Packages store 0 B] [18 InRelease gpgv 20.8 kB] [88 Packages 0 B/1,739 k[0m[33m                                                                               0% [53 Packages store 0 B] [18 InRelease gpgv 20.8 kB][0m                                                      Get:89 http://us-east-1.ec2.archive.ubuntu.com/ubuntu trusty/restricted amd64 Packages [16.0 kB]
+[33m0% [53 Packages store 0 B] [18 InRelease gpgv 20.8 kB] [89 Packages 0 B/16.0 kB[0m[33m                                                                               0% [53 Packages store 0 B] [18 InRelease gpgv 20.8 kB][0m                                                      Get:90 http://us-east-1.ec2.archive.ubuntu.com/ubuntu trusty/restricted i386 Packages [16.4 kB]
+[33m0% [53 Packages store 0 B] [18 InRelease gpgv 20.8 kB] [90 Packages 0 B/16.4 kB[0m[33m                                                                               0% [53 Packages store 0 B] [18 InRelease gpgv 20.8 kB][0m                                                      Get:91 http://us-east-1.ec2.archive.ubuntu.com/ubuntu trusty/universe amd64 Packages [7,589 kB]
+[33m0% [53 Packages store 0 B] [18 InRelease gpgv 20.8 kB] [91 Packages 0 B/7,589 k[0m[33m                                                                               0% [18 InRelease gpgv 20.8 kB] [91 Packages 777 kB/7,589 kB 10%][0m[33m0% [54 Packages store 0 B] [18 InRelease gpgv 20.8 kB] [91 Packages 777 kB/7,58[0m                                                                               Get:92 https://packagecloud.io/github/git-lfs/ubuntu trusty InRelease [23.2 kB]
+[33m0% [54 Packages store 0 B] [18 InRelease gpgv 20.8 kB] [91 Packages 1,344 kB/7,[0m[33m0% [54 Packages store 0 B] [18 InRelease gpgv 20.8 kB] [91 Packages 3,442 kB/7,[0m[33m                                                                               0% [54 Packages store 0 B] [91 Packages 5,365 kB/7,589 kB 71%][0m[33m0% [54 Packages store 0 B] [19 InRelease gpgv 15.4 kB] [91 Packages 5,408 kB/7,[0m                                                                               Get:93 http://ppa.launchpad.net/git-core/ppa/ubuntu trusty/main amd64 Packages [3,486 B]
+[33m0% [54 Packages store 0 B] [19 InRelease gpgv 15.4 kB] [91 Packages 5,430 kB/7,[0m                                                                               Get:94 http://ppa.launchpad.net/git-core/ppa/ubuntu trusty/main i386 Packages [3,484 B]
+[33m0% [54 Packages store 0 B] [19 InRelease gpgv 15.4 kB] [91 Packages 5,496 kB/7,[0m                                                                               Get:95 http://ppa.launchpad.net/git-core/ppa/ubuntu trusty/main Translation-en [2,332 B]
+[33m0% [54 Packages store 0 B] [19 InRelease gpgv 15.4 kB] [91 Packages 5,539 kB/7,[0m[33m                                                                               0% [54 Packages store 0 B] [19 InRelease gpgv 15.4 kB][0m                                                      Get:96 http://us-east-1.ec2.archive.ubuntu.com/ubuntu trusty/universe i386 Packages [7,597 kB]
+[33m0% [54 Packages store 0 B] [19 InRelease gpgv 15.4 kB] [96 Packages 0 B/7,597 k[0m[33m                                                                               0% [19 InRelease gpgv 15.4 kB] [96 Packages 2,603 kB/7,597 kB 34%][0m[33m0% [55 Translation-en store 0 B] [19 InRelease gpgv 15.4 kB] [96 Packages 2,603[0m                                                                               Get:97 https://packagecloud.io/rabbitmq/rabbitmq-server/ubuntu trusty InRelease [23.7 kB]
+[33m0% [55 Translation-en store 0 B] [19 InRelease gpgv 15.4 kB] [96 Packages 3,717[0m[33m0% [55 Translation-en store 0 B] [19 InRelease gpgv 15.4 kB] [96 Packages 3,801[0m[33m                                                                               0% [55 Translation-en store 0 B] [19 InRelease gpgv 15.4 kB][0m                                                            Get:98 http://us-east-1.ec2.archive.ubuntu.com/ubuntu trusty/multiverse amd64 Packages [169 kB]
+[33m0% [55 Translation-en store 0 B] [19 InRelease gpgv 15.4 kB] [98 Packages 0 B/1[0m[33m                                                                               0% [55 Translation-en store 0 B] [19 InRelease gpgv 15.4 kB][0m[33m                                                            0% [55 Translation-en store 0 B][0m                                Get:99 http://us-east-1.ec2.archive.ubuntu.com/ubuntu trusty/multiverse i386 Packages [172 kB]
+[33m0% [55 Translation-en store 0 B] [99 Packages 65.5 kB/172 kB 38%][0m[33m0% [55 Translation-en store 0 B] [20 InRelease gpgv 15.4 kB] [99 Packages 65.5 [0m                                                                               Get:100 http://ppa.launchpad.net/openjdk-r/ppa/ubuntu trusty/main amd64 Packages [7,571 B]
+[33m0% [55 Translation-en store 0 B] [20 InRelease gpgv 15.4 kB] [99 Packages 65.5 [0m[33m0% [55 Translation-en store 0 B] [20 InRelease gpgv 15.4 kB] [99 Packages 65.5 [0m                                                                               Get:101 http://ppa.launchpad.net/openjdk-r/ppa/ubuntu trusty/main i386 Packages [7,700 B]
+[33m0% [55 Translation-en store 0 B] [20 InRelease gpgv 15.4 kB] [99 Packages 131 k[0m[33m0% [55 Translation-en store 0 B] [20 InRelease gpgv 15.4 kB] [99 Packages 131 k[0m                                                                               Get:102 http://ppa.launchpad.net/openjdk-r/ppa/ubuntu trusty/main Translation-en [2,388 B]
+[33m0% [55 Translation-en store 0 B] [20 InRelease gpgv 15.4 kB] [99 Packages 131 k[0m[33m0% [55 Translation-en store 0 B] [20 InRelease gpgv 15.4 kB] [99 Packages 131 k[0m[33m                                                                               0% [55 Translation-en store 0 B] [20 InRelease gpgv 15.4 kB][0m[33m                                                            0% [55 Translation-en store 0 B][0m[33m0% [55 Translation-en store 0 B] [21 InRelease gpgv 15.5 kB] [Waiting for heade[0m                                                                               Get:103 http://ppa.launchpad.net/pollinate/ppa/ubuntu trusty/main amd64 Packages [430 B]
+[33m                                                                               0% [55 Translation-en store 0 B] [21 InRelease gpgv 15.5 kB][0m                                                            Get:104 http://ppa.launchpad.net/pollinate/ppa/ubuntu trusty/main i386 Packages [430 B]
+[33m0% [55 Translation-en store 0 B] [21 InRelease gpgv 15.5 kB] [Waiting for heade[0m                                                                               Get:105 http://ppa.launchpad.net/pollinate/ppa/ubuntu trusty/main Translation-en [374 B]
+[33m                                                                               0% [55 Translation-en store 0 B] [21 InRelease gpgv 15.5 kB][0m[33m                                                            0% [21 InRelease gpgv 15.5 kB][0m[33m0% [56 Packages store 0 B] [21 InRelease gpgv 15.5 kB][0m[33m                                                      0% [21 InRelease gpgv 15.5 kB][0m[33m0% [57 Packages store 0 B] [21 InRelease gpgv 15.5 kB][0m[33m                                                      0% [21 InRelease gpgv 15.5 kB][0m[33m0% [58 Translation-en store 0 B] [21 InRelease gpgv 15.5 kB][0m[33m                                                            0% [21 InRelease gpgv 15.5 kB][0m[33m0% [59 Packages store 0 B] [21 InRelease gpgv 15.5 kB][0m[33m                                                      0% [59 Packages store 0 B][0m[33m0% [59 Packages store 0 B] [Release.gpg gpgv 15.1 kB] [Waiting for headers][0m[33m                                                                           0% [Release.gpg gpgv 15.1 kB] [Waiting for headers][0m[33m0% [60 Packages store 0 B] [Release.gpg gpgv 15.1 kB] [Waiting for headers][0m                                                                           Get:106 http://ppa.launchpad.net/webupd8team/java/ubuntu trusty/main amd64 Packages [1,553 B]
+[33m0% [60 Packages store 0 B] [Release.gpg gpgv 15.1 kB] [106 Packages 1,553 B/1,5[0m[33m                                                                               0% [60 Packages store 0 B] [Release.gpg gpgv 15.1 kB][0m                                                     Get:107 http://ppa.launchpad.net/webupd8team/java/ubuntu trusty/main i386 Packages [1,553 B]
+[33m0% [60 Packages store 0 B] [Release.gpg gpgv 15.1 kB] [107 Packages 1,553 B/1,5[0m[33m                                                                               0% [60 Packages store 0 B] [Release.gpg gpgv 15.1 kB] [Waiting for headers][0m                                                                           Get:108 http://ppa.launchpad.net/webupd8team/java/ubuntu trusty/main Translation-en [834 B]
+[33m0% [60 Packages store 0 B] [Release.gpg gpgv 15.1 kB] [108 Translation-en 834 B[0m[33m                                                                               0% [60 Packages store 0 B] [Release.gpg gpgv 15.1 kB][0m[33m                                                     0% [60 Packages store 0 B][0m[33m0% [60 Packages store 0 B] [27 InRelease gpgv 37.1 kB][0m[33m                                                      0% [27 InRelease gpgv 37.1 kB][0m[33m0% [61 Translation-en store 0 B] [27 InRelease gpgv 37.1 kB][0m[33m                                                            0% [61 Translation-en store 0 B][0m[33m0% [61 Translation-en store 0 B] [37 Release.gpg gpgv 943 B][0m[33m                                                            0% [37 Release.gpg gpgv 943 B][0m[33m0% [62 Packages store 0 B] [37 Release.gpg gpgv 943 B][0m                                                      Get:110 https://download.docker.com/linux/ubuntu trusty/stable amd64 Packages [5,399 B]
+[33m0% [62 Packages store 0 B] [37 Release.gpg gpgv 943 B] [110 Packages 5,399 B/5,[0m[33m                                                                               0% [62 Packages store 0 B] [37 Release.gpg gpgv 943 B][0m[33m                                                      0% [37 Release.gpg gpgv 943 B][0m[33m0% [63 Packages store 0 B] [37 Release.gpg gpgv 943 B][0m[33m                                                      0% [37 Release.gpg gpgv 943 B][0m[33m0% [64 Translation-en store 0 B] [37 Release.gpg gpgv 943 B][0m[33m                                                            0% [37 Release.gpg gpgv 943 B][0m[33m0% [65 Sources store 0 B] [37 Release.gpg gpgv 943 B][0m[33m                                                     0% [37 Release.gpg gpgv 943 B][0m[33m0% [66 Sources store 0 B] [37 Release.gpg gpgv 943 B][0m[33m                                                     0% [37 Release.gpg gpgv 943 B][0m[33m0% [67 Sources store 0 B] [37 Release.gpg gpgv 943 B][0m[33m                                                     0% [37 Release.gpg gpgv 943 B][0m[33m0% [68 Sources store 0 B] [37 Release.gpg gpgv 943 B][0m[33m                                                     0% [37 Release.gpg gpgv 943 B][0m[33m0% [69 Packages store 0 B] [37 Release.gpg gpgv 943 B][0m                                                      Get:111 https://download.docker.com/linux/ubuntu trusty/edge amd64 Packages [6,553 B]
+[33m0% [69 Packages store 0 B] [37 Release.gpg gpgv 943 B] [111 Packages 0 B/6,553 [0m[33m                                                                               0% [69 Packages store 0 B] [37 Release.gpg gpgv 943 B][0m[33m                                                      0% [37 Release.gpg gpgv 943 B][0m[33m0% [70 Packages store 0 B] [37 Release.gpg gpgv 943 B][0m[33m                                                      0% [37 Release.gpg gpgv 943 B][0m[33m0% [71 Translation-en store 0 B] [37 Release.gpg gpgv 943 B][0m[33m                                                            0% [37 Release.gpg gpgv 943 B][0m[33m0% [72 Packages store 0 B] [37 Release.gpg gpgv 943 B][0m[33m                                                      0% [37 Release.gpg gpgv 943 B][0m[33m0% [73 Packages store 0 B] [37 Release.gpg gpgv 943 B][0m[33m                                                      0% [37 Release.gpg gpgv 943 B][0m[33m0% [74 Translation-en store 0 B] [37 Release.gpg gpgv 943 B][0m[33m                                                            0% [37 Release.gpg gpgv 943 B][0m[33m0% [75 Packages store 0 B] [37 Release.gpg gpgv 943 B][0m[33m                                                      0% [37 Release.gpg gpgv 943 B][0m[33m0% [76 Packages store 0 B] [37 Release.gpg gpgv 943 B][0m[33m                                                      0% [37 Release.gpg gpgv 943 B][0m[33m0% [77 Translation-en store 0 B] [37 Release.gpg gpgv 943 B][0m[33m                                                            0% [37 Release.gpg gpgv 943 B][0m[33m0% [78 Packages store 0 B] [37 Release.gpg gpgv 943 B][0m[33m                                                      0% [37 Release.gpg gpgv 943 B][0m[33m0% [79 Packages store 0 B] [37 Release.gpg gpgv 943 B][0m[33m                                                      0% [37 Release.gpg gpgv 943 B][0m[33m0% [80 Translation-en store 0 B] [37 Release.gpg gpgv 943 B][0m[33m                                                            0% [37 Release.gpg gpgv 943 B][0m[33m0% [81 Sources store 0 B] [37 Release.gpg gpgv 943 B][0m[33m                                                     0% [81 Sources store 0 B][0m[33m0% [81 Sources store 0 B] [82 InRelease gpgv 23.5 kB] [Waiting for headers][0m                                                                           Get:112 http://dl.google.com/linux/chrome/deb stable/main amd64 Packages [1,112 B]
+[33m0% [81 Sources store 0 B] [82 InRelease gpgv 23.5 kB] [112 Packages 1,112 B/1,1[0m[33m                                                                               0% [81 Sources store 0 B] [82 InRelease gpgv 23.5 kB][0m[33m                                                     0% [81 Sources store 0 B][0m[33m0% [81 Sources store 0 B] [92 InRelease gpgv 23.2 kB][0m[33m                                                     0% [92 InRelease gpgv 23.2 kB][0m[33m0% [83 Sources store 0 B] [92 InRelease gpgv 23.2 kB][0m[33m                                                     0% [92 InRelease gpgv 23.2 kB][0m[33m0% [84 Sources store 0 B] [92 InRelease gpgv 23.2 kB][0m                                                     Err:92 https://packagecloud.io/github/git-lfs/ubuntu trusty InRelease
+  The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 6B05F25D762E3157
+[33m                                                     0% [84 Sources store 0 B][0m[33m0% [84 Sources store 0 B] [97 InRelease gpgv 23.7 kB][0m[33m                                                     95% [84 Sources store 0 B][0m                          Get:113 https://packagecloud.io/computology/apt-backport/ubuntu trusty/main amd64 Packages [3,628 B]
+[33m95% [84 Sources store 0 B][0m[33m                          95% [Working][0m[33m95% [86 Sources store 0 B][0m[33m                          96% [Working][0m[33m96% [87 Packages store 0 B][0m                           Get:114 https://packagecloud.io/rabbitmq/rabbitmq-server/ubuntu trusty/main amd64 Packages [7,165 B]
+[33m96% [87 Packages store 0 B] [114 Packages 7,165 B/7,165 B 100%][0m[33m                                                               96% [87 Packages store 0 B][0m[33m                           96% [Working][0m[33m96% [88 Packages store 0 B][0m                           Get:115 https://packagecloud.io/rabbitmq/rabbitmq-server/ubuntu trusty/main i386 Packages [7,165 B]
+[33m96% [88 Packages store 0 B] [115 Packages 7,165 B/7,165 B 100%][0m[33m                                                               96% [88 Packages store 0 B][0m[33m                           96% [Working][0m[33m96% [89 Packages store 0 B][0m[33m                           96% [Working][0m[33m96% [90 Packages store 0 B][0m[33m                           96% [Working][0m[33m96% [93 Packages store 0 B][0m[33m                           96% [Working][0m[33m96% [94 Packages store 0 B][0m[33m                           97% [Working][0m[33m97% [95 Translation-en store 0 B][0m[33m                                 97% [Working][0m[33m97% [91 Packages store 0 B][0m[33m97% [91 Packages store 0 B][0m[33m                           97% [Working][0m[33m97% [96 Packages store 0 B][0m[33m97% [96 Packages store 0 B][0m[33m                           97% [Working][0m[33m97% [98 Packages store 0 B][0m[33m                           97% [Working][0m[33m97% [100 Packages store 0 B][0m[33m                            97% [Working][0m[33m97% [101 Packages store 0 B][0m[33m                            98% [Working][0m[33m98% [102 Translation-en store 0 B][0m[33m                                  98% [Working][0m[33m98% [99 Packages store 0 B][0m[33m                           98% [Working][0m[33m98% [103 Packages store 0 B][0m[33m                            98% [Working][0m[33m98% [104 Packages store 0 B][0m[33m                            98% [Working][0m[33m98% [105 Translation-en store 0 B][0m[33m                                  98% [Working][0m[33m98% [106 Packages store 0 B][0m[33m                            99% [Working][0m[33m99% [107 Packages store 0 B][0m[33m                            99% [Working][0m[33m99% [108 Translation-en store 0 B][0m[33m                                  99% [Working][0m[33m99% [110 Packages store 0 B][0m[33m                            99% [Working][0m[33m99% [111 Packages store 0 B][0m[33m                            99% [Working][0m[33m99% [112 Packages store 0 B][0m[33m                            99% [Working][0m[33m99% [113 Packages store 0 B][0m[33m                            99% [Working][0m[33m99% [114 Packages store 0 B][0m[33m                            100% [Working][0m[33m100% [115 Packages store 0 B][0m[33m                             100% [Working][0m              Fetched 39.5 MB in 4s (9,528 kB/s)
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 1%Reading package lists... 5%Reading package lists... 5%Reading package lists... 11%Reading package lists... 11%Reading package lists... 11%Reading package lists... 11%Reading package lists... 11%Reading package lists... 11%Reading package lists... 34%Reading package lists... 34%Reading package lists... 45%Reading package lists... 57%Reading package lists... 57%Reading package lists... 57%Reading package lists... 57%Reading package lists... 58%Reading package lists... 58%Reading package lists... 63%Reading package lists... 63%Reading package lists... 69%Reading package lists... 69%Reading package lists... 75%Reading package lists... 75%Reading package lists... 75%Reading package lists... 75%Reading package lists... 75%Reading package lists... 75%Reading package lists... 75%Reading package lists... 75%Reading package lists... 77%Reading package lists... 77%Reading package lists... 79%Reading package lists... 79%Reading package lists... 80%Reading package lists... 80%Reading package lists... 80%Reading package lists... 80%Reading package lists... 80%Reading package lists... 80%Reading package lists... 80%Reading package lists... 80%Reading package lists... 80%Reading package lists... 80%Reading package lists... 80%Reading package lists... 80%Reading package lists... 80%Reading package lists... 80%Reading package lists... 80%Reading package lists... 80%Reading package lists... 80%Reading package lists... 80%Reading package lists... 80%Reading package lists... 80%Reading package lists... 81%Reading package lists... 81%Reading package lists... 81%Reading package lists... 81%Reading package lists... 81%Reading package lists... 81%Reading package lists... 81%Reading package lists... 81%Reading package lists... 81%Reading package lists... 81%Reading package lists... 81%Reading package lists... 81%Reading package lists... 85%Reading package lists... 85%Reading package lists... 89%Reading package lists... 89%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 95%Reading package lists... 95%Reading package lists... 96%Reading package lists... 96%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 98%Reading package lists... 98%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 1%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+294 packages can be upgraded. Run 'apt list --upgradable' to see them.
+W: http://ppa.launchpad.net/couchdb/stable/ubuntu/dists/trusty/Release.gpg: Signature by key 15866BAFD9BCC4F3C1E0DFC7D69548E1C17EAB57 uses weak digest algorithm (SHA1)
+W: An error occurred during the signature verification. The repository is not updated and the previous index files will be used. GPG error: https://packagecloud.io/github/git-lfs/ubuntu trusty InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 6B05F25D762E3157
+W: Failed to fetch https://packagecloud.io/github/git-lfs/ubuntu/dists/trusty/InRelease  The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 6B05F25D762E3157
+W: Some index files failed to download. They have been ignored, or old ones used instead.
+travis_time:end:00ae2d54:start=1551141979131252935,finish=1551141985266065119,duration=6134812184[0Ktravis_fold:end:before_install.1[0Ktravis_fold:start:before_install.2[0Ktravis_time:start:0510b298[0K$ sudo apt install apache2
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+The following additional packages will be installed:
+  apache2-bin apache2-data libaprutil1-dbd-sqlite3 libaprutil1-ldap
+Suggested packages:
+  apache2-doc apache2-suexec-pristine | apache2-suexec-custom apache2-utils
+The following NEW packages will be installed:
+  apache2 apache2-bin apache2-data libaprutil1-dbd-sqlite3 libaprutil1-ldap
+0 upgraded, 5 newly installed, 0 to remove and 294 not upgraded.
+Need to get 1,112 kB of archives.
+After this operation, 4,734 kB of additional disk space will be used.
+[33m0% [Working][0m            Get:1 http://us-east-1.ec2.archive.ubuntu.com/ubuntu trusty/main amd64 libaprutil1-dbd-sqlite3 amd64 1.5.3-1 [10.5 kB]
+[33m1% [1 libaprutil1-dbd-sqlite3 10.5 kB/10.5 kB 100%][0m[33m                                                   5% [Working][0m            Get:2 http://us-east-1.ec2.archive.ubuntu.com/ubuntu trusty/main amd64 libaprutil1-ldap amd64 1.5.3-1 [8,634 B]
+[33m5% [2 libaprutil1-ldap 8,634 B/8,634 B 100%][0m[33m                                            9% [Working][0m            Get:3 http://us-east-1.ec2.archive.ubuntu.com/ubuntu trusty-updates/main amd64 apache2-bin amd64 2.4.7-1ubuntu4.21 [845 kB]
+[33m9% [3 apache2-bin 0 B/845 kB 0%][0m[33m                                74% [Working][0m             Get:4 http://us-east-1.ec2.archive.ubuntu.com/ubuntu trusty-updates/main amd64 apache2-data all 2.4.7-1ubuntu4.21 [160 kB]
+[33m74% [4 apache2-data 0 B/160 kB 0%][0m[33m                                  90% [Working][0m             Get:5 http://us-east-1.ec2.archive.ubuntu.com/ubuntu trusty-updates/main amd64 apache2 amd64 2.4.7-1ubuntu4.21 [87.4 kB]
+[33m90% [5 apache2 0 B/87.4 kB 0%][0m[33m                              100% [Working][0m              Fetched 1,112 kB in 0s (31.8 MB/s)
+
+7[0;39r8[1ASelecting previously unselected package libaprutil1-dbd-sqlite3:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 93695 files and directories currently installed.)
+Preparing to unpack .../libaprutil1-dbd-sqlite3_1.5.3-1_amd64.deb ...
+7[40;0f[42m[30mProgress: [  0%][49m[39m [..........................................................] 87[40;0f[42m[30mProgress: [  3%][49m[39m [###.......................................................] 8Unpacking libaprutil1-dbd-sqlite3:amd64 (1.5.3-1) ...
+7[40;0f[42m[30mProgress: [  7%][49m[39m [#####.....................................................] 87[40;0f[42m[30mProgress: [ 11%][49m[39m [#######...................................................] 8Selecting previously unselected package libaprutil1-ldap:amd64.
+Preparing to unpack .../libaprutil1-ldap_1.5.3-1_amd64.deb ...
+7[40;0f[42m[30mProgress: [ 15%][49m[39m [#########.................................................] 8Unpacking libaprutil1-ldap:amd64 (1.5.3-1) ...
+7[40;0f[42m[30mProgress: [ 19%][49m[39m [############..............................................] 87[40;0f[42m[30mProgress: [ 23%][49m[39m [##############............................................] 8Selecting previously unselected package apache2-bin.
+Preparing to unpack .../apache2-bin_2.4.7-1ubuntu4.21_amd64.deb ...
+7[40;0f[42m[30mProgress: [ 26%][49m[39m [################..........................................] 8Unpacking apache2-bin (2.4.7-1ubuntu4.21) ...
+7[40;0f[42m[30mProgress: [ 30%][49m[39m [##################........................................] 87[40;0f[42m[30mProgress: [ 34%][49m[39m [#####################.....................................] 8Selecting previously unselected package apache2-data.
+Preparing to unpack .../apache2-data_2.4.7-1ubuntu4.21_all.deb ...
+7[40;0f[42m[30mProgress: [ 38%][49m[39m [#######################...................................] 8Unpacking apache2-data (2.4.7-1ubuntu4.21) ...
+7[40;0f[42m[30mProgress: [ 42%][49m[39m [#########################.................................] 87[40;0f[42m[30mProgress: [ 46%][49m[39m [###########################...............................] 8Selecting previously unselected package apache2.
+Preparing to unpack .../apache2_2.4.7-1ubuntu4.21_amd64.deb ...
+7[40;0f[42m[30mProgress: [ 50%][49m[39m [#############################.............................] 8Unpacking apache2 (2.4.7-1ubuntu4.21) ...
+7[40;0f[42m[30mProgress: [ 53%][49m[39m [################################..........................] 87[40;0f[42m[30mProgress: [ 57%][49m[39m [##################################........................] 8Processing triggers for man-db (2.6.7.1-1ubuntu1) ...
+Processing triggers for ureadahead (0.100.0-16) ...
+Processing triggers for ufw (0.34~rc-0ubuntu2) ...
+Setting up libaprutil1-dbd-sqlite3:amd64 (1.5.3-1) ...
+7[40;0f[42m[30mProgress: [ 61%][49m[39m [####################################......................] 87[40;0f[42m[30mProgress: [ 65%][49m[39m [######################################....................] 8Setting up libaprutil1-ldap:amd64 (1.5.3-1) ...
+7[40;0f[42m[30mProgress: [ 69%][49m[39m [#########################################.................] 87[40;0f[42m[30mProgress: [ 73%][49m[39m [###########################################...............] 8Setting up apache2-bin (2.4.7-1ubuntu4.21) ...
+7[40;0f[42m[30mProgress: [ 76%][49m[39m [#############################################.............] 87[40;0f[42m[30mProgress: [ 80%][49m[39m [###############################################...........] 8Setting up apache2-data (2.4.7-1ubuntu4.21) ...
+7[40;0f[42m[30mProgress: [ 84%][49m[39m [##################################################........] 87[40;0f[42m[30mProgress: [ 88%][49m[39m [####################################################......] 8Setting up apache2 (2.4.7-1ubuntu4.21) ...
+7[40;0f[42m[30mProgress: [ 92%][49m[39m [######################################################....] 8Enabling module mpm_event.
+Enabling module authz_core.
+Enabling module authz_host.
+Enabling module authn_core.
+Enabling module auth_basic.
+Enabling module access_compat.
+Enabling module authn_file.
+Enabling module authz_user.
+Enabling module alias.
+Enabling module dir.
+Enabling module autoindex.
+Enabling module env.
+Enabling module mime.
+Enabling module negotiation.
+Enabling module setenvif.
+Enabling module filter.
+Enabling module deflate.
+Enabling module status.
+Enabling conf charset.
+Enabling conf localized-error-pages.
+Enabling conf other-vhosts-access-log.
+Enabling conf security.
+Enabling conf serve-cgi-bin.
+Enabling site 000-default.
+ * Starting web server apache2       [80G AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+ * 
+Processing triggers for ureadahead (0.100.0-16) ...
+Processing triggers for ufw (0.34~rc-0ubuntu2) ...
+7[40;0f[42m[30mProgress: [ 96%][49m[39m [########################################################..] 8
+7[0;40r8[1A[Jtravis_time:end:0510b298:start=1551141985270135002,finish=1551141989822937164,duration=4552802162[0Ktravis_fold:end:before_install.2[0Ktravis_fold:start:before_install.3[0Ktravis_time:start:303b46f0[0K$ yarn add --ignore-engines headless-chrome-crawler
+[2K[1G[1myarn add v1.3.2[22m
+[2K[1G[34minfo[39m No lockfile found.
+[2K[1G[2m[1/4][22m Resolving packages...
+[1G⠁ [0K[1G⠂ headless-chrome-crawler[0K[1G⠄ headless-chrome-crawler[0K[1G⡀ headless-chrome-crawler[0K[1G⢀ headless-chrome-crawler[0K[1G⠠ headless-chrome-crawler[0K[1G⠐ robots-parser@1.0.2[0K[1G⠈ tough-cookie@>=2.3.3[0K[1G⠁ lodash@^4.13.1[0K[1G⠂ mime-types@^2.1.12[0K[1G⠄ verror@1.10.0[0K[1G⡀ safer-buffer@~2.1.0[0K[1G⢀ es6-promise@^4.0.3[0K[1G⠠ concat-map@0.0.1[0K[2K[1G[2K[1G[2m[2/4][22m Fetching packages...
+[2K[1G[2m[3/4][22m Linking dependencies...
+[2K[1G[33mwarning[39m " > headless-chrome-crawler@1.8.0" has unmet peer dependency "redis@2.8.0".
+[2K[1G[2m[4/4][22m Building fresh packages...
+[2K[1G[32msuccess[39m Saved lockfile.
+[2K[1G[32msuccess[39m Saved 94 new dependencies.
+├─ agent-base@4.2.1
+├─ ajv@5.5.2
+├─ asn1@0.2.4
+├─ assert-plus@1.0.0
+├─ async-limiter@1.0.0
+├─ asynckit@0.4.0
+├─ aws-sign2@0.7.0
+├─ aws4@1.8.0
+├─ balanced-match@1.0.0
+├─ bcrypt-pbkdf@1.0.2
+├─ bluebird@3.5.3
+├─ brace-expansion@1.1.11
+├─ buffer-from@1.1.1
+├─ caseless@0.12.0
+├─ co@4.6.0
+├─ combined-stream@1.0.7
+├─ concat-map@0.0.1
+├─ concat-stream@1.6.2
+├─ core-util-is@1.0.2
+├─ dashdash@1.14.1
+├─ debug@3.2.6
+├─ delayed-stream@1.0.0
+├─ ecc-jsbn@0.1.2
+├─ es6-promise@4.2.6
+├─ es6-promisify@5.0.0
+├─ extend@3.0.2
+├─ extract-zip@1.6.7
+├─ extsprintf@1.3.0
+├─ fast-deep-equal@1.1.0
+├─ fast-json-stable-stringify@2.0.0
+├─ fd-slicer@1.0.1
+├─ forever-agent@0.6.1
+├─ form-data@2.3.3
+├─ fs.realpath@1.0.0
+├─ getpass@0.1.7
+├─ glob@7.1.3
+├─ har-schema@2.0.0
+├─ har-validator@5.0.3
+├─ headless-chrome-crawler@1.8.0
+├─ http-signature@1.2.0
+├─ https-proxy-agent@2.2.1
+├─ inflight@1.0.6
+├─ inherits@2.0.3
+├─ ip-regex@2.1.0
+├─ is-typedarray@1.0.0
+├─ isarray@1.0.0
+├─ isstream@0.1.2
+├─ jquery@3.3.1
+├─ jsbn@0.1.1
+├─ json-schema-traverse@0.3.1
+├─ json-schema@0.2.3
+├─ json-stringify-safe@5.0.1
+├─ jsprim@1.4.1
+├─ lodash@4.17.5
+├─ mime-db@1.38.0
+├─ mime-types@2.1.22
+├─ mime@2.4.0
+├─ minimatch@3.0.4
+├─ minimist@0.0.8
+├─ mkdirp@0.5.1
+├─ ms@2.0.0
+├─ oauth-sign@0.8.2
+���─ once@1.4.0
+├─ path-is-absolute@1.0.1
+├─ pend@1.2.0
+├─ performance-now@2.1.0
+├─ process-nextick-args@2.0.0
+├─ progress@2.0.3
+├─ proxy-from-env@1.0.0
+├─ psl@1.1.31
+├─ punycode@1.4.1
+├─ puppeteer@1.5.0
+├─ qs@6.5.2
+├─ readable-stream@2.3.6
+├─ request-promise-core@1.1.1
+├─ request-promise@4.2.2
+├─ request@2.87.0
+├─ rimraf@2.6.3
+├─ robots-parser@1.0.2
+├─ safe-buffer@5.1.2
+├─ safer-buffer@2.1.2
+├─ sshpk@1.16.1
+├─ stealthy-require@1.1.1
+├─ string_decoder@1.1.1
+├─ tough-cookie@3.0.1
+├─ tunnel-agent@0.6.0
+├─ tweetnacl@0.14.5
+├─ typedarray@0.0.6
+├─ util-deprecate@1.0.2
+├─ uuid@3.3.2
+├─ verror@1.10.0
+├─ wrappy@1.0.2
+├─ ws@5.2.2
+└─ yauzl@2.4.1
+[2K[1GDone in 8.33s.
+travis_time:end:303b46f0:start=1551141989826719646,finish=1551141998474038988,duration=8647319342[0Ktravis_fold:end:before_install.3[0Ktravis_fold:start:before_install.4[0Ktravis_time:start:0135e647[0K$ sudo a2enmod headers proxy_http
+Enabling module headers.
+Considering dependency proxy for proxy_http:
+Enabling module proxy.
+Enabling module proxy_http.
+To activate the new configuration, you need to run:
+  service apache2 restart
+travis_time:end:0135e647:start=1551141998477952825,finish=1551141998519361345,duration=41408520[0Ktravis_fold:end:before_install.4[0Ktravis_fold:start:before_install.5[0Ktravis_time:start:0402a949[0K$ printf "ProxyPass \"/\" \"http://localhost:8080/\"\nProxyPassReverse \"/\" \"http://localhost:8080/\"\n" | sudo tee /etc/apache2/conf-available/csp.conf
+ProxyPass "/" "http://localhost:8080/"
+ProxyPassReverse "/" "http://localhost:8080/"
+travis_time:end:0402a949:start=1551141998523576721,finish=1551141998532436903,duration=8860182[0Ktravis_fold:end:before_install.5[0Ktravis_fold:start:before_install.6[0Ktravis_time:start:02234ccd[0K$ cat .travis-ci/csp.txt | sudo tee -a /etc/apache2/conf-available/csp.conf
+Header always set Content-Security-Policy: "default-src 'none'; base-uri 'none'; font-src 'self'; form-action 'none'; frame-ancestors 'none'; img-src 'self'; style-src 'self'; block-all-mixed-content; require-sri-for script; report-uri http://localhost/.travis-ci/report-uri.php"
+travis_time:end:02234ccd:start=1551141998536161214,finish=1551141998544867335,duration=8706121[0Ktravis_fold:end:before_install.6[0Ktravis_fold:start:before_install.7[0Ktravis_time:start:08a324d2[0K$ sudo a2enconf csp.conf
+Enabling conf csp.
+To activate the new configuration, you need to run:
+  service apache2 reload
+travis_time:end:08a324d2:start=1551141998552939154,finish=1551141998589638871,duration=36699717[0Ktravis_fold:end:before_install.7[0Ktravis_fold:start:before_install.8[0Ktravis_time:start:07c76128[0K$ sudo service apache2 restart
+ * Restarting web server apache2       [80G AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+[74G[ OK ]
+travis_time:end:07c76128:start=1551141998593715129,finish=1551142000792899105,duration=2199183976[0Ktravis_fold:end:before_install.8[0Ktravis_fold:start:before_script.1[0Ktravis_time:start:02e0ae4b[0K$ printf "<?php \$report = json_decode(file_get_contents('php://input')); if((in_array(\$report->{'csp-report'}->{'blocked-uri'}, array_map('trim', file('blocked-uri-exclusions.txt')))) || (in_array(\$report->{'csp-report'}->{'document-uri'}, array_map('trim', file('document-uri-exclusions.txt'))))) { exit(); } else { file_put_contents('csp-reports.txt', json_encode(\$report, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES) . \"\\\\n\\\\n\", FILE_APPEND); } ?>" > .travis-ci/report-uri.php
+travis_time:end:02e0ae4b:start=1551142000796973369,finish=1551142000799618619,duration=2645250[0Ktravis_fold:end:before_script.1[0Ktravis_fold:start:before_script.2[0Ktravis_time:start:026375b1[0K$ touch .travis-ci/csp-reports.txt .travis-ci/blocked-uri-exclusions.txt .travis-ci/document-uri-exclusions.txt
+travis_time:end:026375b1:start=1551142000803190146,finish=1551142000806474385,duration=3284239[0Ktravis_fold:end:before_script.2[0Ktravis_fold:start:before_script.3[0Ktravis_time:start:14e6badd[0K$ printf "include_path = $(pwd)" > .travis-ci/php-conf-csp.ini
+travis_time:end:14e6badd:start=1551142000809851703,finish=1551142000812977867,duration=3126164[0Ktravis_fold:end:before_script.3[0Ktravis_fold:start:before_script.4[0Ktravis_time:start:003e397c[0K$ phpenv config-add .travis-ci/php-conf-csp.ini
+File .travis-ci/php-conf-csp.ini added to /home/travis/.phpenv/versions/7.2/etc/conf.d.
+travis_time:end:003e397c:start=1551142000816548510,finish=1551142000841820811,duration=25272301[0Ktravis_fold:end:before_script.4[0Ktravis_fold:start:before_script.5[0Ktravis_time:start:0de916c4[0K$ php -S localhost:8080 > /dev/null 2>&1 &
+travis_time:end:0de916c4:start=1551142000845597329,finish=1551142000849552212,duration=3954883[0Ktravis_fold:end:before_script.5[0Ktravis_fold:start:before_script.6[0Ktravis_time:start:0c562f20[0K$ sleep 3
+travis_time:end:0c562f20:start=1551142000854144656,finish=1551142003858960934,duration=3004816278[0Ktravis_fold:end:before_script.6[0Ktravis_time:start:191aee70[0K$ chmod +x .travis-ci/build.sh && ./.travis-ci/build.sh
+Crawler Done
+
+Crawled Pages:
+response.url,response.status,links.length
+http://localhost/,200,0
+
+Content Security Policy Reports:
+{
+    "csp-report": {
+        "document-uri": "http://localhost/",
+        "referrer": "",
+        "violated-directive": "style-src",
+        "effective-directive": "style-src",
+        "original-policy": "default-src 'none'; base-uri 'none'; font-src 'self'; form-action 'none'; frame-ancestors 'none'; img-src 'self'; style-src 'self'; block-all-mixed-content; require-sri-for script; report-uri http://localhost/.travis-ci/report-uri.php",
+        "disposition": "enforce",
+        "blocked-uri": "inline",
+        "line-number": 3,
+        "source-file": "http://localhost/",
+        "status-code": 200,
+        "script-sample": ""
+    }
+}
+
+{
+    "csp-report": {
+        "document-uri": "http://localhost/",
+        "referrer": "",
+        "violated-directive": "style-src",
+        "effective-directive": "style-src",
+        "original-policy": "default-src 'none'; base-uri 'none'; font-src 'self'; form-action 'none'; frame-ancestors 'none'; img-src 'self'; style-src 'self'; block-all-mixed-content; require-sri-for script; report-uri http://localhost/.travis-ci/report-uri.php",
+        "disposition": "enforce",
+        "blocked-uri": "inline",
+        "line-number": 10,
+        "source-file": "http://localhost/",
+        "status-code": 200,
+        "script-sample": ""
+    }
+}
+
+{
+    "csp-report": {
+        "document-uri": "http://localhost/",
+        "referrer": "",
+        "violated-directive": "style-src",
+        "effective-directive": "style-src",
+        "original-policy": "default-src 'none'; base-uri 'none'; font-src 'self'; form-action 'none'; frame-ancestors 'none'; img-src 'self'; style-src 'self'; block-all-mixed-content; require-sri-for script; report-uri http://localhost/.travis-ci/report-uri.php",
+        "disposition": "enforce",
+        "blocked-uri": "inline",
+        "line-number": 17,
+        "source-file": "http://localhost/",
+        "status-code": 200,
+        "script-sample": ""
+    }
+}
+
+{
+    "csp-report": {
+        "document-uri": "http://localhost/",
+        "referrer": "",
+        "violated-directive": "style-src",
+        "effective-directive": "style-src",
+        "original-policy": "default-src 'none'; base-uri 'none'; font-src 'self'; form-action 'none'; frame-ancestors 'none'; img-src 'self'; style-src 'self'; block-all-mixed-content; require-sri-for script; report-uri http://localhost/.travis-ci/report-uri.php",
+        "disposition": "enforce",
+        "blocked-uri": "inline",
+        "line-number": 18,
+        "source-file": "http://localhost/",
+        "status-code": 200,
+        "script-sample": ""
+    }
+}travis_time:end:191aee70:start=1551142003863214511,finish=1551142006513290540,duration=2650076029[0K[32;1mThe command "chmod +x .travis-ci/build.sh && ./.travis-ci/build.sh" exited with 0.[0m
+
+
+
+Done. Your build exited with 0.
+/home/travis/.travis/functions: line 472:  5900 Terminated              php -S localhost:8080 > /dev/null 2>&1
